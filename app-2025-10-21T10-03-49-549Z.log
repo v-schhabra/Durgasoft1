@@ -1,0 +1,415 @@
+[2025-10-21T10:03:49.551Z] [INFO] tenantId: 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0, clientId: 72e913b2-423c-4625-8fa3-c948512a9f1d, secret: ***
+[2025-10-21T10:03:49.552Z] [INFO] Checking connectivity to: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token
+[2025-10-21T10:03:49.552Z] [INFO] No proxy configured
+[2025-10-21T10:03:49.557Z] [INFO] name: undici:request:create: {"request":{"method":"GET","abort":null,"body":null,"completed":false,"aborted":false,"upgrade":null,"path":"/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token","origin":"https://login.microsoftonline.com","protocol":"https:","idempotent":true,"blocking":true,"reset":null,"host":null,"contentLength":null,"contentType":null,"headers":["accept","*/*","accept-language","*","sec-fetch-mode","cors","user-agent","undici","accept-encoding","br, gzip, deflate"],"expectContinue":false,"servername":null}}
+[2025-10-21T10:03:49.951Z] [INFO] DNS lookup requested for: login.microsoftonline.com
+[2025-10-21T10:03:49.951Z] [INFO] [DNS] login.microsoftonline.com resolved in 368ms -> [{"address":"20.190.145.140","family":4},{"address":"40.126.17.135","family":4},{"address":"40.126.17.131","family":4},{"address":"20.190.145.160","family":4},{"address":"40.126.17.133","family":4},{"address":"20.190.145.143","family":4},{"address":"20.190.145.141","family":4},{"address":"40.126.17.134","family":4},{"address":"2603:1046:2000:60::a","family":6},{"address":"2603:1046:2000:60::11","family":6},{"address":"2603:1046:2000:60::f","family":6},{"address":"2603:1046:2000:60::9","family":6},{"address":"2603:1046:2000:60::e","family":6},{"address":"2603:1046:2000:60::c","family":6},{"address":"2603:1046:2000:60::10","family":6},{"address":"2603:1046:2000:60::d","family":6}]
+[2025-10-21T10:03:49.952Z] [INFO] name: undici:request:error: {"request":{"method":"GET","abort":null,"body":null,"completed":false,"aborted":false,"upgrade":null,"path":"/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token","origin":"https://login.microsoftonline.com","protocol":"https:","idempotent":true,"blocking":true,"reset":null,"host":null,"contentLength":null,"contentType":null,"headers":["accept","*/*","accept-language","*","sec-fetch-mode","cors","user-agent","undici","accept-encoding","br, gzip, deflate"],"expectContinue":false,"servername":null},"error":{"code":"ERR_INVALID_IP_ADDRESS"}}
+[2025-10-21T10:03:49.954Z] [ERROR] [TEST] Connectivity to Entra Endpoint URL ❌ Failed after: 402.5ms
+[2025-10-21T10:03:49.954Z] [ERROR]    Type: TypeError
+[2025-10-21T10:03:49.954Z] [ERROR]    Message: fetch failed
+[2025-10-21T10:03:49.955Z] [ERROR]    Cause: TypeError [ERR_INVALID_IP_ADDRESS]: Invalid IP address: undefined
+[2025-10-21T10:03:49.955Z] [ERROR]    Stack: TypeError: fetch failed
+[2025-10-21T10:03:49.955Z] [INFO] Checking connectivity to: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token With IPv4 enforced
+[2025-10-21T10:03:49.955Z] [INFO] No proxy configured
+[2025-10-21T10:03:49.956Z] [INFO] name: undici:request:create: {"request":{"method":"GET","abort":null,"body":null,"completed":false,"aborted":false,"upgrade":null,"path":"/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token","origin":"https://login.microsoftonline.com","protocol":"https:","idempotent":true,"blocking":true,"reset":null,"host":null,"contentLength":null,"contentType":null,"headers":["accept","*/*","accept-language","*","sec-fetch-mode","cors","user-agent","undici","accept-encoding","br, gzip, deflate"],"expectContinue":false,"servername":null}}
+[2025-10-21T10:03:49.957Z] [INFO] DNS lookup requested for: login.microsoftonline.com
+[2025-10-21T10:03:49.958Z] [INFO] [DNS] login.microsoftonline.com resolved in 1ms -> [{"address":"40.126.17.131","family":4},{"address":"20.190.145.160","family":4},{"address":"20.190.145.140","family":4},{"address":"20.190.145.143","family":4},{"address":"40.126.17.134","family":4},{"address":"40.126.17.135","family":4},{"address":"40.126.17.133","family":4},{"address":"20.190.145.141","family":4}]
+[2025-10-21T10:03:51.149Z] [INFO] [TEST] Connectivity With IPv4 enforced to Entra Endpoint URL was ✅ Success: 200 OK in 1193.5ms
+[2025-10-21T10:03:51.149Z] [INFO] [TEST] With IPv4 enforced Entra Endpoint successfully redirected to : false, URL: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token
+[2025-10-21T10:03:51.149Z] [INFO] MSAL - ServicePrincipal - clientSecret is used.
+[2025-10-21T10:03:51.151Z] [INFO] MSAL v3 - getMSALToken called.
+[2025-10-21T10:03:51.151Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Info - acquireTokenByClientCredential called
+[2025-10-21T10:03:51.151Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - initializeRequestScopes called
+[2025-10-21T10:03:51.152Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [25e9dbfe-db57-4021-95d8-975b13823530] : @azure/msal-node@3.8.0 : Verbose - createAuthority called
+[2025-10-21T10:03:51.153Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Executing function authorityResolveEndpointsAsync
+[2025-10-21T10:03:51.153Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Retrieving all cache keys
+[2025-10-21T10:03:51.153Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:51.153Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:03:51.153Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+[2025-10-21T10:03:51.153Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Known Authorities:
+[2025-10-21T10:03:51.153Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Authority Metadata: N/A
+[2025-10-21T10:03:51.153Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+[2025-10-21T10:03:51.153Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+[2025-10-21T10:03:51.153Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Found cloud discovery metadata from hardcoded values.
+[2025-10-21T10:03:51.154Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:03:51.154Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Executing function authorityUpdateEndpointMetadata
+[2025-10-21T10:03:51.154Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Attempting to get endpoint metadata from authority configuration
+[2025-10-21T10:03:51.154Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+[2025-10-21T10:03:51.154Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Returning result from authorityUpdateEndpointMetadata
+[2025-10-21T10:03:51.154Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: authority-metadata-72e913b2-423c-4625-8fa3-c948512a9f1d-login.windows.net
+[2025-10-21T10:03:51.154Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:51.154Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Setting cache key value store
+[2025-10-21T10:03:51.154Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Returning result from authorityResolveEndpointsAsync
+[2025-10-21T10:03:51.154Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [25e9dbfe-db57-4021-95d8-975b13823530] : @azure/msal-node@3.8.0 : Verbose - buildOauthClientConfiguration called
+[2025-10-21T10:03:51.154Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:03:51.155Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [25e9dbfe-db57-4021-95d8-975b13823530] : @azure/msal-node@3.8.0 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+[2025-10-21T10:03:51.155Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [25e9dbfe-db57-4021-95d8-975b13823530] : @azure/msal-node@3.8.0 : Verbose - Client credential client created
+[2025-10-21T10:03:51.156Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting in-memory cache
+[2025-10-21T10:03:51.156Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:51.156Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:03:51.157Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:03:51.157Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:51.157Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:03:51.157Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:51.157Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:03:51.157Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [25e9dbfe-db57-4021-95d8-975b13823530] : @azure/msal-common@15.13.0 : Info - Sending token request to endpoint: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token
+[2025-10-21T10:03:51.157Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: throttling.{"clientId":"72e913b2-423c-4625-8fa3-c948512a9f1d","authority":"https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0","scopes":["https://management.core.windows.net//.default"],"authenticationScheme":"Bearer"}
+[2025-10-21T10:03:51.157Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:51.157Z] [INFO] [Tue, 21 Oct 2025 10:03:51 GMT] : [25e9dbfe-db57-4021-95d8-975b13823530] : @azure/msal-common@15.13.0 : Trace - Executing function networkClientSendPostRequestAsync
+[2025-10-21T10:03:53.172Z] [INFO] [Tue, 21 Oct 2025 10:03:53 GMT] : [25e9dbfe-db57-4021-95d8-975b13823530] : @azure/msal-common@15.13.0 : Trace - Error occurred in networkClientSendPostRequestAsync
+[2025-10-21T10:03:53.172Z] [INFO] [Tue, 21 Oct 2025 10:03:53 GMT] : [25e9dbfe-db57-4021-95d8-975b13823530] : @azure/msal-common@15.13.0 : Trace - {}
+[2025-10-21T10:03:53.172Z] [INFO] [Tue, 21 Oct 2025 10:03:53 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:03:53.172Z] [INFO] [Tue, 21 Oct 2025 10:03:53 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:53.172Z] [INFO] [Tue, 21 Oct 2025 10:03:53 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:03:53.172Z] [INFO] [Tue, 21 Oct 2025 10:03:53 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:53.172Z] [INFO] [Tue, 21 Oct 2025 10:03:53 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Setting cache key value store
+[2025-10-21T10:03:53.172Z] [INFO] MSAL v3 - retrying getMSALToken - temporary error code: network_error
+[2025-10-21T10:03:53.172Z] [INFO] MSAL v3 - retrying getMSALToken - remaining attempts: 3 - retry minseconds: 2000
+[2025-10-21T10:03:55.175Z] [INFO] MSAL v3 - getMSALToken called.
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Info - acquireTokenByClientCredential called
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - initializeRequestScopes called
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [487f3b74-e63f-41d2-a128-b18250e98be1] : @azure/msal-node@3.8.0 : Verbose - createAuthority called
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Executing function authorityResolveEndpointsAsync
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Retrieving all cache keys
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: authority-metadata-72e913b2-423c-4625-8fa3-c948512a9f1d-login.windows.net
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Known Authorities:
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Authority Metadata: N/A
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Found cloud discovery metadata from hardcoded values.
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Executing function authorityUpdateEndpointMetadata
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Attempting to get endpoint metadata from authority configuration
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Returning result from authorityUpdateEndpointMetadata
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: authority-metadata-72e913b2-423c-4625-8fa3-c948512a9f1d-login.windows.net
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Setting cache key value store
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Returning result from authorityResolveEndpointsAsync
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [487f3b74-e63f-41d2-a128-b18250e98be1] : @azure/msal-node@3.8.0 : Verbose - buildOauthClientConfiguration called
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:03:55.175Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [487f3b74-e63f-41d2-a128-b18250e98be1] : @azure/msal-node@3.8.0 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+[2025-10-21T10:03:55.176Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [487f3b74-e63f-41d2-a128-b18250e98be1] : @azure/msal-node@3.8.0 : Verbose - Client credential client created
+[2025-10-21T10:03:55.176Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting in-memory cache
+[2025-10-21T10:03:55.176Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:55.176Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:03:55.176Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:03:55.176Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:55.176Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:03:55.176Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:55.176Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:03:55.176Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [487f3b74-e63f-41d2-a128-b18250e98be1] : @azure/msal-common@15.13.0 : Info - Sending token request to endpoint: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token
+[2025-10-21T10:03:55.176Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: throttling.{"clientId":"72e913b2-423c-4625-8fa3-c948512a9f1d","authority":"https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0","scopes":["https://management.core.windows.net//.default"],"authenticationScheme":"Bearer"}
+[2025-10-21T10:03:55.176Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:55.176Z] [INFO] [Tue, 21 Oct 2025 10:03:55 GMT] : [487f3b74-e63f-41d2-a128-b18250e98be1] : @azure/msal-common@15.13.0 : Trace - Executing function networkClientSendPostRequestAsync
+[2025-10-21T10:03:57.465Z] [INFO] [Tue, 21 Oct 2025 10:03:57 GMT] : [487f3b74-e63f-41d2-a128-b18250e98be1] : @azure/msal-common@15.13.0 : Trace - Error occurred in networkClientSendPostRequestAsync
+[2025-10-21T10:03:57.465Z] [INFO] [Tue, 21 Oct 2025 10:03:57 GMT] : [487f3b74-e63f-41d2-a128-b18250e98be1] : @azure/msal-common@15.13.0 : Trace - {}
+[2025-10-21T10:03:57.465Z] [INFO] [Tue, 21 Oct 2025 10:03:57 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:03:57.465Z] [INFO] [Tue, 21 Oct 2025 10:03:57 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:57.465Z] [INFO] [Tue, 21 Oct 2025 10:03:57 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:03:57.465Z] [INFO] [Tue, 21 Oct 2025 10:03:57 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:03:57.465Z] [INFO] [Tue, 21 Oct 2025 10:03:57 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Setting cache key value store
+[2025-10-21T10:03:57.465Z] [INFO] MSAL v3 - retrying getMSALToken - temporary error code: network_error
+[2025-10-21T10:03:57.465Z] [INFO] MSAL v3 - retrying getMSALToken - remaining attempts: 2 - retry minseconds: 4000
+[2025-10-21T10:04:01.466Z] [INFO] MSAL v3 - getMSALToken called.
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Info - acquireTokenByClientCredential called
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - initializeRequestScopes called
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [7fa2fe8c-b8b7-4397-88cd-3d1256934752] : @azure/msal-node@3.8.0 : Verbose - createAuthority called
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Executing function authorityResolveEndpointsAsync
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Retrieving all cache keys
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: authority-metadata-72e913b2-423c-4625-8fa3-c948512a9f1d-login.windows.net
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Known Authorities:
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Authority Metadata: N/A
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Found cloud discovery metadata from hardcoded values.
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Executing function authorityUpdateEndpointMetadata
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Attempting to get endpoint metadata from authority configuration
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Returning result from authorityUpdateEndpointMetadata
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: authority-metadata-72e913b2-423c-4625-8fa3-c948512a9f1d-login.windows.net
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Setting cache key value store
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Returning result from authorityResolveEndpointsAsync
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [7fa2fe8c-b8b7-4397-88cd-3d1256934752] : @azure/msal-node@3.8.0 : Verbose - buildOauthClientConfiguration called
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:01.466Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [7fa2fe8c-b8b7-4397-88cd-3d1256934752] : @azure/msal-node@3.8.0 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+[2025-10-21T10:04:01.467Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [7fa2fe8c-b8b7-4397-88cd-3d1256934752] : @azure/msal-node@3.8.0 : Verbose - Client credential client created
+[2025-10-21T10:04:01.467Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting in-memory cache
+[2025-10-21T10:04:01.467Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:01.467Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:01.467Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:01.467Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:01.467Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:01.467Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:01.467Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:01.467Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [7fa2fe8c-b8b7-4397-88cd-3d1256934752] : @azure/msal-common@15.13.0 : Info - Sending token request to endpoint: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token
+[2025-10-21T10:04:01.467Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: throttling.{"clientId":"72e913b2-423c-4625-8fa3-c948512a9f1d","authority":"https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0","scopes":["https://management.core.windows.net//.default"],"authenticationScheme":"Bearer"}
+[2025-10-21T10:04:01.467Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:01.467Z] [INFO] [Tue, 21 Oct 2025 10:04:01 GMT] : [7fa2fe8c-b8b7-4397-88cd-3d1256934752] : @azure/msal-common@15.13.0 : Trace - Executing function networkClientSendPostRequestAsync
+[2025-10-21T10:04:03.476Z] [INFO] [Tue, 21 Oct 2025 10:04:03 GMT] : [7fa2fe8c-b8b7-4397-88cd-3d1256934752] : @azure/msal-common@15.13.0 : Trace - Error occurred in networkClientSendPostRequestAsync
+[2025-10-21T10:04:03.476Z] [INFO] [Tue, 21 Oct 2025 10:04:03 GMT] : [7fa2fe8c-b8b7-4397-88cd-3d1256934752] : @azure/msal-common@15.13.0 : Trace - {}
+[2025-10-21T10:04:03.476Z] [INFO] [Tue, 21 Oct 2025 10:04:03 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:03.476Z] [INFO] [Tue, 21 Oct 2025 10:04:03 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:03.476Z] [INFO] [Tue, 21 Oct 2025 10:04:03 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:03.476Z] [INFO] [Tue, 21 Oct 2025 10:04:03 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:03.476Z] [INFO] [Tue, 21 Oct 2025 10:04:03 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Setting cache key value store
+[2025-10-21T10:04:03.476Z] [INFO] MSAL v3 - retrying getMSALToken - temporary error code: network_error
+[2025-10-21T10:04:03.476Z] [INFO] MSAL v3 - retrying getMSALToken - remaining attempts: 1 - retry minseconds: 8000
+[2025-10-21T10:04:11.479Z] [INFO] MSAL v3 - getMSALToken called.
+[2025-10-21T10:04:11.479Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Info - acquireTokenByClientCredential called
+[2025-10-21T10:04:11.479Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - initializeRequestScopes called
+[2025-10-21T10:04:11.479Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [4add4090-90c1-4928-893e-6b04233a4d5a] : @azure/msal-node@3.8.0 : Verbose - createAuthority called
+[2025-10-21T10:04:11.479Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Executing function authorityResolveEndpointsAsync
+[2025-10-21T10:04:11.479Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Retrieving all cache keys
+[2025-10-21T10:04:11.479Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:11.479Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: authority-metadata-72e913b2-423c-4625-8fa3-c948512a9f1d-login.windows.net
+[2025-10-21T10:04:11.479Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:11.479Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Known Authorities:
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Authority Metadata: N/A
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Found cloud discovery metadata from hardcoded values.
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Executing function authorityUpdateEndpointMetadata
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Attempting to get endpoint metadata from authority configuration
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Returning result from authorityUpdateEndpointMetadata
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: authority-metadata-72e913b2-423c-4625-8fa3-c948512a9f1d-login.windows.net
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Setting cache key value store
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Returning result from authorityResolveEndpointsAsync
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [4add4090-90c1-4928-893e-6b04233a4d5a] : @azure/msal-node@3.8.0 : Verbose - buildOauthClientConfiguration called
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [4add4090-90c1-4928-893e-6b04233a4d5a] : @azure/msal-node@3.8.0 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [4add4090-90c1-4928-893e-6b04233a4d5a] : @azure/msal-node@3.8.0 : Verbose - Client credential client created
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting in-memory cache
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [4add4090-90c1-4928-893e-6b04233a4d5a] : @azure/msal-common@15.13.0 : Info - Sending token request to endpoint: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: throttling.{"clientId":"72e913b2-423c-4625-8fa3-c948512a9f1d","authority":"https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0","scopes":["https://management.core.windows.net//.default"],"authenticationScheme":"Bearer"}
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:11.480Z] [INFO] [Tue, 21 Oct 2025 10:04:11 GMT] : [4add4090-90c1-4928-893e-6b04233a4d5a] : @azure/msal-common@15.13.0 : Trace - Executing function networkClientSendPostRequestAsync
+[2025-10-21T10:04:13.488Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [4add4090-90c1-4928-893e-6b04233a4d5a] : @azure/msal-common@15.13.0 : Trace - Error occurred in networkClientSendPostRequestAsync
+[2025-10-21T10:04:13.488Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [4add4090-90c1-4928-893e-6b04233a4d5a] : @azure/msal-common@15.13.0 : Trace - {}
+[2025-10-21T10:04:13.489Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:13.489Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:13.489Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:13.489Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Getting cache key-value store
+[2025-10-21T10:04:13.489Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@3.8.0 : Trace - Setting cache key value store
+[2025-10-21T10:04:13.489Z] [ERROR] Failed to fetch access token v3: network_error: Network request failed
+[2025-10-21T10:04:13.489Z] [INFO] Retrying with MSAL v2...
+[2025-10-21T10:04:13.489Z] [INFO] MSAL v2 - getMSALToken called.
+[2025-10-21T10:04:13.489Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Info - acquireTokenByClientCredential called
+[2025-10-21T10:04:13.489Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - initializeRequestScopes called
+[2025-10-21T10:04:13.490Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [c48373d1-5eb4-4d85-9f2d-9674e40fa27b] : @azure/msal-node@2.16.3 : Verbose - buildOauthClientConfiguration called
+[2025-10-21T10:04:13.490Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [c48373d1-5eb4-4d85-9f2d-9674e40fa27b] : @azure/msal-node@2.16.3 : Verbose - createAuthority called
+[2025-10-21T10:04:13.490Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Executing function authorityResolveEndpointsAsync
+[2025-10-21T10:04:13.490Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Retrieving all cache keys
+[2025-10-21T10:04:13.490Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Known Authorities:
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Authority Metadata: N/A
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Executing function authorityUpdateEndpointMetadata
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: authority-metadata-72e913b2-423c-4625-8fa3-c948512a9f1d-login.windows.net
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Setting cache key value store
+[2025-10-21T10:04:13.491Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Returning result from authorityResolveEndpointsAsync
+[2025-10-21T10:04:13.492Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:13.492Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [c48373d1-5eb4-4d85-9f2d-9674e40fa27b] : @azure/msal-node@2.16.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+[2025-10-21T10:04:13.492Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [c48373d1-5eb4-4d85-9f2d-9674e40fa27b] : @azure/msal-node@2.16.3 : Verbose - Client credential client created
+[2025-10-21T10:04:13.492Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting in-memory cache
+[2025-10-21T10:04:13.492Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:13.493Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:13.493Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:13.493Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:13.493Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:13.493Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:13.493Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:13.493Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [c48373d1-5eb4-4d85-9f2d-9674e40fa27b] : @azure/msal-common@14.16.1 : Info - Sending token request to endpoint: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token
+[2025-10-21T10:04:13.493Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: throttling.{"clientId":"72e913b2-423c-4625-8fa3-c948512a9f1d","authority":"https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0","scopes":["https://management.core.windows.net//.default"],"authenticationScheme":"Bearer"}
+[2025-10-21T10:04:13.493Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:13.493Z] [INFO] [Tue, 21 Oct 2025 10:04:13 GMT] : [c48373d1-5eb4-4d85-9f2d-9674e40fa27b] : @azure/msal-common@14.16.1 : Trace - Executing function networkClientSendPostRequestAsync
+[2025-10-21T10:04:15.502Z] [INFO] [Tue, 21 Oct 2025 10:04:15 GMT] : [c48373d1-5eb4-4d85-9f2d-9674e40fa27b] : @azure/msal-common@14.16.1 : Trace - Error occurred in networkClientSendPostRequestAsync
+[2025-10-21T10:04:15.502Z] [INFO] [Tue, 21 Oct 2025 10:04:15 GMT] : [c48373d1-5eb4-4d85-9f2d-9674e40fa27b] : @azure/msal-common@14.16.1 : Trace - {}
+[2025-10-21T10:04:15.502Z] [INFO] [Tue, 21 Oct 2025 10:04:15 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:15.502Z] [INFO] [Tue, 21 Oct 2025 10:04:15 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:15.502Z] [INFO] [Tue, 21 Oct 2025 10:04:15 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:15.502Z] [INFO] [Tue, 21 Oct 2025 10:04:15 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:15.502Z] [INFO] [Tue, 21 Oct 2025 10:04:15 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Setting cache key value store
+[2025-10-21T10:04:15.503Z] [INFO] MSAL v2 - retrying getMSALToken - temporary error code: network_error
+[2025-10-21T10:04:15.503Z] [INFO] MSAL v2 - retrying getMSALToken - remaining attempts: 3 - retry minseconds: 2000
+[2025-10-21T10:04:17.505Z] [INFO] MSAL v2 - getMSALToken called.
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Info - acquireTokenByClientCredential called
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - initializeRequestScopes called
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [c2928411-e18f-446d-9368-5103493764c7] : @azure/msal-node@2.16.3 : Verbose - buildOauthClientConfiguration called
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [c2928411-e18f-446d-9368-5103493764c7] : @azure/msal-node@2.16.3 : Verbose - createAuthority called
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Executing function authorityResolveEndpointsAsync
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Retrieving all cache keys
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: authority-metadata-72e913b2-423c-4625-8fa3-c948512a9f1d-login.windows.net
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Known Authorities:
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Authority Metadata: N/A
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Executing function authorityUpdateEndpointMetadata
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: authority-metadata-72e913b2-423c-4625-8fa3-c948512a9f1d-login.windows.net
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Setting cache key value store
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Returning result from authorityResolveEndpointsAsync
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [c2928411-e18f-446d-9368-5103493764c7] : @azure/msal-node@2.16.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+[2025-10-21T10:04:17.505Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [c2928411-e18f-446d-9368-5103493764c7] : @azure/msal-node@2.16.3 : Verbose - Client credential client created
+[2025-10-21T10:04:17.506Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting in-memory cache
+[2025-10-21T10:04:17.506Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:17.506Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:17.506Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:17.506Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:17.506Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:17.506Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:17.506Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:17.506Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [c2928411-e18f-446d-9368-5103493764c7] : @azure/msal-common@14.16.1 : Info - Sending token request to endpoint: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token
+[2025-10-21T10:04:17.506Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: throttling.{"clientId":"72e913b2-423c-4625-8fa3-c948512a9f1d","authority":"https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0","scopes":["https://management.core.windows.net//.default"],"authenticationScheme":"Bearer"}
+[2025-10-21T10:04:17.506Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:17.506Z] [INFO] [Tue, 21 Oct 2025 10:04:17 GMT] : [c2928411-e18f-446d-9368-5103493764c7] : @azure/msal-common@14.16.1 : Trace - Executing function networkClientSendPostRequestAsync
+[2025-10-21T10:04:19.514Z] [INFO] [Tue, 21 Oct 2025 10:04:19 GMT] : [c2928411-e18f-446d-9368-5103493764c7] : @azure/msal-common@14.16.1 : Trace - Error occurred in networkClientSendPostRequestAsync
+[2025-10-21T10:04:19.514Z] [INFO] [Tue, 21 Oct 2025 10:04:19 GMT] : [c2928411-e18f-446d-9368-5103493764c7] : @azure/msal-common@14.16.1 : Trace - {}
+[2025-10-21T10:04:19.514Z] [INFO] [Tue, 21 Oct 2025 10:04:19 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:19.514Z] [INFO] [Tue, 21 Oct 2025 10:04:19 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:19.514Z] [INFO] [Tue, 21 Oct 2025 10:04:19 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:19.514Z] [INFO] [Tue, 21 Oct 2025 10:04:19 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:19.514Z] [INFO] [Tue, 21 Oct 2025 10:04:19 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Setting cache key value store
+[2025-10-21T10:04:19.514Z] [INFO] MSAL v2 - retrying getMSALToken - temporary error code: network_error
+[2025-10-21T10:04:19.514Z] [INFO] MSAL v2 - retrying getMSALToken - remaining attempts: 2 - retry minseconds: 4000
+[2025-10-21T10:04:23.515Z] [INFO] MSAL v2 - getMSALToken called.
+[2025-10-21T10:04:23.515Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Info - acquireTokenByClientCredential called
+[2025-10-21T10:04:23.515Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - initializeRequestScopes called
+[2025-10-21T10:04:23.515Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [d84cbf19-5ae2-4c41-b54d-153e2527b79b] : @azure/msal-node@2.16.3 : Verbose - buildOauthClientConfiguration called
+[2025-10-21T10:04:23.515Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [d84cbf19-5ae2-4c41-b54d-153e2527b79b] : @azure/msal-node@2.16.3 : Verbose - createAuthority called
+[2025-10-21T10:04:23.515Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Executing function authorityResolveEndpointsAsync
+[2025-10-21T10:04:23.515Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Retrieving all cache keys
+[2025-10-21T10:04:23.515Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: authority-metadata-72e913b2-423c-4625-8fa3-c948512a9f1d-login.windows.net
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Known Authorities:
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Authority Metadata: N/A
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Executing function authorityUpdateEndpointMetadata
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: authority-metadata-72e913b2-423c-4625-8fa3-c948512a9f1d-login.windows.net
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Setting cache key value store
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Returning result from authorityResolveEndpointsAsync
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [d84cbf19-5ae2-4c41-b54d-153e2527b79b] : @azure/msal-node@2.16.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [d84cbf19-5ae2-4c41-b54d-153e2527b79b] : @azure/msal-node@2.16.3 : Verbose - Client credential client created
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting in-memory cache
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [d84cbf19-5ae2-4c41-b54d-153e2527b79b] : @azure/msal-common@14.16.1 : Info - Sending token request to endpoint: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: throttling.{"clientId":"72e913b2-423c-4625-8fa3-c948512a9f1d","authority":"https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0","scopes":["https://management.core.windows.net//.default"],"authenticationScheme":"Bearer"}
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:23.516Z] [INFO] [Tue, 21 Oct 2025 10:04:23 GMT] : [d84cbf19-5ae2-4c41-b54d-153e2527b79b] : @azure/msal-common@14.16.1 : Trace - Executing function networkClientSendPostRequestAsync
+[2025-10-21T10:04:25.525Z] [INFO] [Tue, 21 Oct 2025 10:04:25 GMT] : [d84cbf19-5ae2-4c41-b54d-153e2527b79b] : @azure/msal-common@14.16.1 : Trace - Error occurred in networkClientSendPostRequestAsync
+[2025-10-21T10:04:25.525Z] [INFO] [Tue, 21 Oct 2025 10:04:25 GMT] : [d84cbf19-5ae2-4c41-b54d-153e2527b79b] : @azure/msal-common@14.16.1 : Trace - {}
+[2025-10-21T10:04:25.525Z] [INFO] [Tue, 21 Oct 2025 10:04:25 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:25.525Z] [INFO] [Tue, 21 Oct 2025 10:04:25 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:25.525Z] [INFO] [Tue, 21 Oct 2025 10:04:25 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:25.525Z] [INFO] [Tue, 21 Oct 2025 10:04:25 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:25.525Z] [INFO] [Tue, 21 Oct 2025 10:04:25 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Setting cache key value store
+[2025-10-21T10:04:25.525Z] [INFO] MSAL v2 - retrying getMSALToken - temporary error code: network_error
+[2025-10-21T10:04:25.525Z] [INFO] MSAL v2 - retrying getMSALToken - remaining attempts: 1 - retry minseconds: 8000
+[2025-10-21T10:04:33.530Z] [INFO] MSAL v2 - getMSALToken called.
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Info - acquireTokenByClientCredential called
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - initializeRequestScopes called
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [2e581bf8-1883-4ee9-bf52-994c12f4fec5] : @azure/msal-node@2.16.3 : Verbose - buildOauthClientConfiguration called
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [2e581bf8-1883-4ee9-bf52-994c12f4fec5] : @azure/msal-node@2.16.3 : Verbose - createAuthority called
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Executing function authorityResolveEndpointsAsync
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Retrieving all cache keys
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: authority-metadata-72e913b2-423c-4625-8fa3-c948512a9f1d-login.windows.net
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Known Authorities:
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Authority Metadata: N/A
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Executing function authorityUpdateEndpointMetadata
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: authority-metadata-72e913b2-423c-4625-8fa3-c948512a9f1d-login.windows.net
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Setting cache key value store
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Returning result from authorityResolveEndpointsAsync
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [2e581bf8-1883-4ee9-bf52-994c12f4fec5] : @azure/msal-node@2.16.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [2e581bf8-1883-4ee9-bf52-994c12f4fec5] : @azure/msal-node@2.16.3 : Verbose - Client credential client created
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting in-memory cache
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:33.530Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:33.531Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:33.531Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:33.531Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+[2025-10-21T10:04:33.531Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [2e581bf8-1883-4ee9-bf52-994c12f4fec5] : @azure/msal-common@14.16.1 : Info - Sending token request to endpoint: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token
+[2025-10-21T10:04:33.531Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: throttling.{"clientId":"72e913b2-423c-4625-8fa3-c948512a9f1d","authority":"https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0","scopes":["https://management.core.windows.net//.default"],"authenticationScheme":"Bearer"}
+[2025-10-21T10:04:33.531Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:33.531Z] [INFO] [Tue, 21 Oct 2025 10:04:33 GMT] : [2e581bf8-1883-4ee9-bf52-994c12f4fec5] : @azure/msal-common@14.16.1 : Trace - Executing function networkClientSendPostRequestAsync
+[2025-10-21T10:04:35.821Z] [INFO] [Tue, 21 Oct 2025 10:04:35 GMT] : [2e581bf8-1883-4ee9-bf52-994c12f4fec5] : @azure/msal-common@14.16.1 : Trace - Error occurred in networkClientSendPostRequestAsync
+[2025-10-21T10:04:35.821Z] [INFO] [Tue, 21 Oct 2025 10:04:35 GMT] : [2e581bf8-1883-4ee9-bf52-994c12f4fec5] : @azure/msal-common@14.16.1 : Trace - {}
+[2025-10-21T10:04:35.821Z] [INFO] [Tue, 21 Oct 2025 10:04:35 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:35.821Z] [INFO] [Tue, 21 Oct 2025 10:04:35 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:35.821Z] [INFO] [Tue, 21 Oct 2025 10:04:35 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Item key: server-telemetry-72e913b2-423c-4625-8fa3-c948512a9f1d
+[2025-10-21T10:04:35.821Z] [INFO] [Tue, 21 Oct 2025 10:04:35 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Getting cache key-value store
+[2025-10-21T10:04:35.821Z] [INFO] [Tue, 21 Oct 2025 10:04:35 GMT] : [] : @azure/msal-node@2.16.3 : Trace - Setting cache key value store
+[2025-10-21T10:04:35.821Z] [ERROR] Failed to fetch access token v2: network_error: Network request failed
