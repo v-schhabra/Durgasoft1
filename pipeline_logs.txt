@@ -1,0 +1,735 @@
+2025-09-22T13:50:28.0023792Z ##[debug]Evaluating condition for step: 'Azure App Service Deploy: fractal-cdtsols-dev-nexus-node'
+2025-09-22T13:50:28.0024918Z ##[debug]Evaluating: succeeded()
+2025-09-22T13:50:28.0025223Z ##[debug]Evaluating succeeded:
+2025-09-22T13:50:28.0025738Z ##[debug]=> True
+2025-09-22T13:50:28.0026020Z ##[debug]Result: True
+2025-09-22T13:50:28.0026369Z ##[section]Starting: Azure App Service Deploy: fractal-cdtsols-dev-nexus-node
+2025-09-22T13:50:28.0036105Z ==============================================================================
+2025-09-22T13:50:28.0036230Z Task         : Azure App Service deploy
+2025-09-22T13:50:28.0036321Z Description  : Deploy to Azure App Service a web, mobile, or API app using Docker, Java, .NET, .NET Core, Node.js, PHP, Python, or Ruby
+2025-09-22T13:50:28.0036455Z Version      : 5.260.0
+2025-09-22T13:50:28.0036537Z Author       : Microsoft Corporation
+2025-09-22T13:50:28.0036615Z Help         : https://aka.ms/azureappservicetroubleshooting
+2025-09-22T13:50:28.0036933Z ==============================================================================
+2025-09-22T13:50:28.1121289Z ##[debug]Using node path: /home/FRACTAL/brahmaiah.bhupathi/agent/externals/node20_1/bin/node
+2025-09-22T13:50:28.3746035Z ##[debug]agent.TempDirectory=/home/FRACTAL/brahmaiah.bhupathi/agent/_work/_temp
+2025-09-22T13:50:28.3754311Z ##[debug]loading inputs and endpoints
+2025-09-22T13:50:28.3757083Z ##[debug]loading INPUT_CONNECTIONTYPE
+2025-09-22T13:50:28.3775890Z ##[debug]loading INPUT_CONNECTEDSERVICENAME
+2025-09-22T13:50:28.3778049Z ##[debug]loading INPUT_PUBLISHPROFILEPATH
+2025-09-22T13:50:28.3778838Z ##[debug]loading INPUT_WEBAPPKIND
+2025-09-22T13:50:28.3779907Z ##[debug]loading INPUT_WEBAPPNAME
+2025-09-22T13:50:28.3782351Z ##[debug]loading INPUT_DEPLOYTOSLOTORASEFLAG
+2025-09-22T13:50:28.3783789Z ##[debug]loading INPUT_SLOTNAME
+2025-09-22T13:50:28.3785331Z ##[debug]loading INPUT_DOCKERNAMESPACE
+2025-09-22T13:50:28.3787461Z ##[debug]loading INPUT_DOCKERREPOSITORY
+2025-09-22T13:50:28.3790045Z ##[debug]loading INPUT_PACKAGE
+2025-09-22T13:50:28.3794895Z ##[debug]loading INPUT_INLINESCRIPT
+2025-09-22T13:50:28.3795946Z ##[debug]loading INPUT_SCRIPTPATH
+2025-09-22T13:50:28.3798263Z ##[debug]loading INPUT_USEWEBDEPLOY
+2025-09-22T13:50:28.3800562Z ##[debug]loading INPUT_DEPLOYMENTTYPE
+2025-09-22T13:50:28.3801863Z ##[debug]loading INPUT_TAKEAPPOFFLINEFLAG
+2025-09-22T13:50:28.3803644Z ##[debug]loading INPUT_SETPARAMETERSFILE
+2025-09-22T13:50:28.3804798Z ##[debug]loading INPUT_REMOVEADDITIONALFILESFLAG
+2025-09-22T13:50:28.3807107Z ##[debug]loading INPUT_EXCLUDEFILESFROMAPPDATAFLAG
+2025-09-22T13:50:28.3808549Z ##[debug]loading INPUT_ADDITIONALARGUMENTS
+2025-09-22T13:50:28.3810073Z ##[debug]loading INPUT_RENAMEFILESFLAG
+2025-09-22T13:50:28.3811761Z ##[debug]loading INPUT_XMLTRANSFORMATION
+2025-09-22T13:50:28.3813518Z ##[debug]loading INPUT_XMLVARIABLESUBSTITUTION
+2025-09-22T13:50:28.3814770Z ##[debug]loading INPUT_DEPLOYMENTTYPELINUX
+2025-09-22T13:50:28.3816430Z ##[debug]loading INPUT_CLEANDEPLOYMENTFLAG
+2025-09-22T13:50:28.3817638Z ##[debug]loading ENDPOINT_AUTH_a1f41200-759f-4f0b-a4f6-bd0a1846d22d
+2025-09-22T13:50:28.3818518Z ##[debug]loading ENDPOINT_AUTH_SCHEME_a1f41200-759f-4f0b-a4f6-bd0a1846d22d
+2025-09-22T13:50:28.3820416Z ##[debug]loading ENDPOINT_AUTH_PARAMETER_a1f41200-759f-4f0b-a4f6-bd0a1846d22d_SERVICEPRINCIPALID
+2025-09-22T13:50:28.3821395Z ##[debug]loading ENDPOINT_AUTH_PARAMETER_a1f41200-759f-4f0b-a4f6-bd0a1846d22d_AUTHENTICATIONTYPE
+2025-09-22T13:50:28.3822233Z ##[debug]loading ENDPOINT_AUTH_PARAMETER_a1f41200-759f-4f0b-a4f6-bd0a1846d22d_TENANTID
+2025-09-22T13:50:28.3823071Z ##[debug]loading ENDPOINT_AUTH_PARAMETER_a1f41200-759f-4f0b-a4f6-bd0a1846d22d_SERVICEPRINCIPALKEY
+2025-09-22T13:50:28.3833493Z ##[debug]loading ENDPOINT_AUTH_SYSTEMVSSCONNECTION
+2025-09-22T13:50:28.3834340Z ##[debug]loading ENDPOINT_AUTH_SCHEME_SYSTEMVSSCONNECTION
+2025-09-22T13:50:28.3835312Z ##[debug]loading ENDPOINT_AUTH_PARAMETER_SYSTEMVSSCONNECTION_ACCESSTOKEN
+2025-09-22T13:50:28.3843330Z ##[debug]loading SECRET_CONTAINER_AUTHENTICATIONTOKEN
+2025-09-22T13:50:28.3844942Z ##[debug]loaded 34
+2025-09-22T13:50:28.3851719Z ##[debug]Agent.ProxyUrl=undefined
+2025-09-22T13:50:28.3852089Z ##[debug]Agent.CAInfo=undefined
+2025-09-22T13:50:28.3852436Z ##[debug]Agent.ClientCert=undefined
+2025-09-22T13:50:28.3852784Z ##[debug]Agent.SkipCertValidation=undefined
+2025-09-22T13:50:28.9529965Z ##[debug]agent.proxyurl=undefined
+2025-09-22T13:50:28.9530497Z ##[debug]VSTS_ARM_REST_IGNORE_SSL_ERRORS=undefined
+2025-09-22T13:50:28.9530897Z ##[debug]AZURE_HTTP_USER_AGENT=VSTS_3688ea08-8860-4461-89cd-4b00c7130c29_build_144_0
+2025-09-22T13:50:28.9705579Z ##[debug]check path : /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/node_modules/azure-pipelines-tasks-azure-arm-rest/module.json
+2025-09-22T13:50:28.9707081Z ##[debug]adding resource file: /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/node_modules/azure-pipelines-tasks-azure-arm-rest/module.json
+2025-09-22T13:50:28.9707664Z ##[debug]system.culture=en-US
+2025-09-22T13:50:29.5494624Z ##[debug]Resource file has already set to: /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/node_modules/azure-pipelines-tasks-azure-arm-rest/module.json
+2025-09-22T13:50:29.5503709Z ##[debug]Feature 'EnableMsalV3' = 'True'. Processed as 'true'.
+2025-09-22T13:50:29.5504173Z ##[debug]Using msalv3
+2025-09-22T13:50:29.6641774Z ##[debug]Resource file has already set to: /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/node_modules/azure-pipelines-tasks-azure-arm-rest/module.json
+2025-09-22T13:50:29.6646361Z ##[debug]Agent.TempDirectory=/home/FRACTAL/brahmaiah.bhupathi/agent/_work/_temp
+2025-09-22T13:50:29.6650337Z ##[debug]Resource file has already set to: /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/node_modules/azure-pipelines-tasks-azure-arm-rest/module.json
+2025-09-22T13:50:29.6708419Z ##[debug]Resource file has already set to: /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/node_modules/azure-pipelines-tasks-azure-arm-rest/module.json
+2025-09-22T13:50:29.6709195Z ##[debug]Resource file has already set to: /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/node_modules/azure-pipelines-tasks-azure-arm-rest/module.json
+2025-09-22T13:50:29.6714144Z ##[debug]Resource file has already set to: /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/node_modules/azure-pipelines-tasks-azure-arm-rest/module.json
+2025-09-22T13:50:29.6714869Z ##[debug]Resource file has already set to: /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/node_modules/azure-pipelines-tasks-azure-arm-rest/module.json
+2025-09-22T13:50:29.6792684Z ##[debug]Resource file has already set to: /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/node_modules/azure-pipelines-tasks-azure-arm-rest/module.json
+2025-09-22T13:50:29.6807284Z ##[debug]Resource file has already set to: /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/node_modules/azure-pipelines-tasks-azure-arm-rest/module.json
+2025-09-22T13:50:29.7005219Z ##[debug]check path : /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/task.json
+2025-09-22T13:50:29.7006172Z ##[debug]adding resource file: /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/task.json
+2025-09-22T13:50:29.7007338Z ##[debug]system.culture=en-US
+2025-09-22T13:50:29.7134632Z ##[debug]check path : /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/node_modules/azure-pipelines-tasks-webdeployment-common/module.json
+2025-09-22T13:50:29.7135285Z ##[debug]adding resource file: /home/FRACTAL/brahmaiah.bhupathi/agent/_work/_tasks/AzureRmWebAppDeployment_497d490f-eea7-4f2b-ab94-48d9c1acdcb1/5.260.0/node_modules/azure-pipelines-tasks-webdeployment-common/module.json
+2025-09-22T13:50:29.7135988Z ##[debug]system.culture=en-US
+2025-09-22T13:50:29.7181067Z ##[debug]ConnectionType=AzureRM
+2025-09-22T13:50:29.7182226Z ##[debug]WebAppKind=webAppContainer
+2025-09-22T13:50:29.7183668Z ##[debug]DeployToSlotOrASEFlag=false
+2025-09-22T13:50:29.7184134Z ##[debug]GenerateWebConfig=undefined
+2025-09-22T13:50:29.7184838Z ##[debug]WebConfigParameters=undefined
+2025-09-22T13:50:29.7185254Z ##[debug]XmlTransformation=false
+2025-09-22T13:50:29.7185631Z ##[debug]JSONFiles=undefined
+2025-09-22T13:50:29.7186619Z ##[debug]XmlVariableSubstitution=false
+2025-09-22T13:50:29.7187507Z ##[debug]TakeAppOfflineFlag=true
+2025-09-22T13:50:29.7189096Z ##[debug]RenameFilesFlag=true
+2025-09-22T13:50:29.7190239Z ##[debug]AdditionalArguments=-retryAttempts:6 -retryInterval:10000
+2025-09-22T13:50:29.7190692Z ##[debug]ScriptType=undefined
+2025-09-22T13:50:29.7191408Z ##[debug]InlineScript=:: You can provide your deployment commands here. One command per line.
+2025-09-22T13:50:29.7192869Z ##[debug]ScriptPath=/home/FRACTAL/brahmaiah.bhupathi/agent/_work/106/s
+2025-09-22T13:50:29.7193661Z ##[debug]DockerNamespace=fractalcdtdev.azurecr.io
+2025-09-22T13:50:29.7194091Z ##[debug]AppSettings=undefined
+2025-09-22T13:50:29.7194502Z ##[debug]StartupCommand=undefined
+2025-09-22T13:50:29.7194917Z ##[debug]ConfigurationSettings=undefined
+2025-09-22T13:50:29.7195434Z ##[debug]ConnectedServiceName=a1f41200-759f-4f0b-a4f6-bd0a1846d22d
+2025-09-22T13:50:29.7195897Z ##[debug]WebAppName=fractal-cdtsols-dev-nexus-node
+2025-09-22T13:50:29.7522158Z ##[debug]Processed: ##vso[telemetry.publish area=TaskEndpointId;feature=AzureRmWebAppDeployment]{"endpointId":"a1f41200-759f-4f0b-a4f6-bd0a1846d22d"}
+2025-09-22T13:50:29.7523429Z ##[debug]DeploymentTypeLinux=oneDeploy
+2025-09-22T13:50:29.7527262Z ##[debug]CleanDeploymentFlag=true
+2025-09-22T13:50:29.7744012Z ##[debug]Processed: ##vso[telemetry.publish area=AdditionalArgumentsVerification;feature=AzureRmWebAppDeployment]{"doubleQuoteCount":0,"singleQuoteCount":0,"escapeCharCount":0,"spaceCharCount":0,"totalArgs":0}
+2025-09-22T13:50:29.7744794Z ##[debug]Depolyment started for linux app service
+2025-09-22T13:50:29.7745206Z ##[debug]set Azure_App_Service_Deploy_PackageArtifactAlias=
+2025-09-22T13:50:29.7745886Z ##[debug]Processed: ##vso[task.setvariable variable=Azure_App_Service_Deploy_PackageArtifactAlias;isOutput=false;issecret=false;]
+2025-09-22T13:50:29.7746330Z ##[debug]Predeployment Step Started
+2025-09-22T13:50:29.7746670Z ##[debug]USE_MSAL=true
+2025-09-22T13:50:29.7747023Z ##[debug]MSAL - USE_MSAL override is found: true
+2025-09-22T13:50:29.7747413Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d auth scheme = ServicePrincipal
+2025-09-22T13:50:29.7747826Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d data subscriptionid = 4f83679a-fcf1-4908-8c15-fd435488e766
+2025-09-22T13:50:29.7748240Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d data subscriptionname = Fractal-Dev 
+2025-09-22T13:50:29.7748780Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d auth param serviceprincipalid = ***
+2025-09-22T13:50:29.7749200Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d data activeDirectoryAuthority = https://login.microsoftonline.com/
+2025-09-22T13:50:29.7749633Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d auth param tenantid = 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0
+2025-09-22T13:50:29.7750043Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d=https://management.azure.com/
+2025-09-22T13:50:29.7750455Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d data environment = AzureCloud
+2025-09-22T13:50:29.7750847Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d auth scheme = ServicePrincipal
+2025-09-22T13:50:29.7751554Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d data msiclientId = undefined
+2025-09-22T13:50:29.7751979Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d data activeDirectoryServiceEndpointResourceId = https://management.core.windows.net/
+2025-09-22T13:50:29.7752431Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d data AzureKeyVaultServiceEndpointResourceId = https://vault.azure.net
+2025-09-22T13:50:29.7752881Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d data AzureKeyVaultDnsSuffix = vault.azure.net
+2025-09-22T13:50:29.7753284Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d data ScopeLevel = Subscription
+2025-09-22T13:50:29.7753668Z ##[debug]MSAL - getEndpoint - useGraphActiveDirectoryResource=false
+2025-09-22T13:50:29.7754034Z ##[debug]MSAL - getEndpoint - useMSAL=true
+2025-09-22T13:50:29.7754881Z ##[debug]MSAL - getEndpoint - endpoint={"subscriptionID":"4f83679a-fcf1-4908-8c15-fd435488e766","subscriptionName":"Fractal-Dev ","servicePrincipalClientID":"***","environmentAuthorityUrl":"https://login.microsoftonline.com/","tenantID":"2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0","url":"https://management.azure.com/","environment":"AzureCloud","scheme":"ServicePrincipal","activeDirectoryResourceID":"https://management.core.windows.net/","azureKeyVaultServiceEndpointResourceId":"https://vault.azure.net","azureKeyVaultDnsSuffix":"vault.azure.net","scopeLevel":"Subscription"}
+2025-09-22T13:50:29.7755612Z ##[debug]MSAL - getEndpoint - connectedServiceName=a1f41200-759f-4f0b-a4f6-bd0a1846d22d
+2025-09-22T13:50:29.7756018Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d auth param authenticationType = spnKey
+2025-09-22T13:50:29.7756384Z ##[debug]credentials spn endpoint
+2025-09-22T13:50:29.7756857Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d auth param serviceprincipalkey = ***
+2025-09-22T13:50:29.7757277Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d data EnableAdfsAuthentication = false
+2025-09-22T13:50:29.7757673Z ##[debug]a1f41200-759f-4f0b-a4f6-bd0a1846d22d auth param apitoken = undefined
+2025-09-22T13:50:29.7758961Z ##[debug]{"subscriptionID":"4f83679a-fcf1-4908-8c15-fd435488e766","subscriptionName":"Fractal-Dev ","servicePrincipalClientID":"***","environmentAuthorityUrl":"https://login.microsoftonline.com/","tenantID":"2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0","url":"https://management.azure.com/","environment":"AzureCloud","scheme":"ServicePrincipal","activeDirectoryResourceID":"https://management.azure.com/","azureKeyVaultServiceEndpointResourceId":"https://vault.azure.net","azureKeyVaultDnsSuffix":"vault.azure.net","scopeLevel":"Subscription","authenticationType":"spnKey","servicePrincipalKey":***,"isADFSEnabled":false,"applicationTokenCredentials":{"connectedServiceName":"a1f41200-759f-4f0b-a4f6-bd0a1846d22d","clientId":"***","tenantId":"2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0","baseUrl":"https://management.azure.com/","authorityUrl":"https://login.microsoftonline.com/","activeDirectoryResourceId":"https://management.azure.com/","isAzureStackEnvironment":false,"authType":"spnKey","secret":***,"isADFSEnabled":false,"useMSAL":true,"tokenMutex":{"_semaphore":{"_value":1,"_cancelError":{},"_weightedQueues":[],"_weightedWaiters":[]}}}}
+2025-09-22T13:50:29.7759982Z Got service connection details for Azure App Service:'fractal-cdtsols-dev-nexus-node'
+2025-09-22T13:50:29.7760340Z ##[debug]MSAL - getMSALToken called. force=undefined
+2025-09-22T13:50:29.7760689Z ##[debug]system.debug=True
+2025-09-22T13:50:29.7761017Z ##[debug]system.debug=True
+2025-09-22T13:50:29.7761343Z ##[debug]agent.proxyurl=undefined
+2025-09-22T13:50:29.7761684Z ##[debug]agent.proxybypasslist=undefined
+2025-09-22T13:50:29.7762060Z ##[debug]MSAL - ServicePrincipal - clientSecret is used.
+2025-09-22T13:50:29.7762472Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Info - acquireTokenByClientCredential called
+2025-09-22T13:50:29.7762919Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - initializeRequestScopes called
+2025-09-22T13:50:29.7763374Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [e045ac4e-81b9-44ae-8ac7-928cddc185bb] : @azure/msal-node@3.5.3 : Verbose - createAuthority called
+2025-09-22T13:50:29.7763959Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityResolveEndpointsAsync
+2025-09-22T13:50:29.7764402Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Retrieving all cache keys
+2025-09-22T13:50:29.7764833Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:29.7765286Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:50:29.7765772Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+2025-09-22T13:50:29.7766307Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Known Authorities: 
+2025-09-22T13:50:29.7766885Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Authority Metadata: N/A
+2025-09-22T13:50:29.7767358Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+2025-09-22T13:50:29.7767905Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+2025-09-22T13:50:29.7768410Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+2025-09-22T13:50:29.7768919Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:50:29.7769387Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateEndpointMetadata
+2025-09-22T13:50:29.7769875Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+2025-09-22T13:50:29.7770378Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+2025-09-22T13:50:29.7770875Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+2025-09-22T13:50:29.7771418Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:50:29.7771868Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:29.7772299Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Setting cache key value store
+2025-09-22T13:50:29.7772764Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityResolveEndpointsAsync
+2025-09-22T13:50:29.7773239Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [e045ac4e-81b9-44ae-8ac7-928cddc185bb] : @azure/msal-node@3.5.3 : Verbose - buildOauthClientConfiguration called
+2025-09-22T13:50:29.7773734Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+2025-09-22T13:50:29.7774310Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [e045ac4e-81b9-44ae-8ac7-928cddc185bb] : @azure/msal-node@3.5.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+2025-09-22T13:50:29.7774895Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [e045ac4e-81b9-44ae-8ac7-928cddc185bb] : @azure/msal-node@3.5.3 : Verbose - Client credential client created
+2025-09-22T13:50:29.7775459Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting in-memory cache
+2025-09-22T13:50:29.7775893Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:29.7776375Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+2025-09-22T13:50:29.7776882Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: server-telemetry-***
+2025-09-22T13:50:29.7777318Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:29.7777885Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: server-telemetry-***
+2025-09-22T13:50:29.7778322Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:29.7778797Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+2025-09-22T13:50:29.7779370Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [e045ac4e-81b9-44ae-8ac7-928cddc185bb] : @azure/msal-common@15.6.0 : Info - Sending token request to endpoint: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token
+2025-09-22T13:50:29.7780071Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: throttling.{"clientId":"***","authority":"https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0","scopes":["https://management.azure.com//.default"],"authenticationScheme":"Bearer"}
+2025-09-22T13:50:29.7780782Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:29.7781270Z ##[debug][Mon, 22 Sep 2025 13:50:29 GMT] : [e045ac4e-81b9-44ae-8ac7-928cddc185bb] : @azure/msal-common@15.6.0 : Trace - Executing function networkClientSendPostRequestAsync
+2025-09-22T13:50:31.2306442Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [e045ac4e-81b9-44ae-8ac7-928cddc185bb] : @azure/msal-common@15.6.0 : Trace - Returning result from networkClientSendPostRequestAsync
+2025-09-22T13:50:31.2312435Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: server-telemetry-***
+2025-09-22T13:50:31.2316528Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:31.2318266Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: server-telemetry-***
+2025-09-22T13:50:31.2319224Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:31.2324750Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [e045ac4e-81b9-44ae-8ac7-928cddc185bb] : @azure/msal-common@15.6.0 : Warning - No client info in response
+2025-09-22T13:50:31.2344287Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting in-memory cache
+2025-09-22T13:50:31.2344916Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:31.2351230Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: -login.windows.net-accesstoken-***-2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0-https://management.azure.com//.default--
+2025-09-22T13:50:31.2354608Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:31.2358336Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Setting cache key value store
+2025-09-22T13:50:31.2364512Z ##[debug]MSAL - retrieved token - isFromCache?: false
+2025-09-22T13:50:31.2371876Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:50:31.2376605Z ##[debug][GET]https://management.azure.com/subscriptions/4f83679a-fcf1-4908-8c15-fd435488e766/resources?$filter=resourceType EQ 'Microsoft.Web%2FSites' AND name EQ 'fractal-cdtsols-dev-nexus-node'&api-version=2016-07-01
+2025-09-22T13:50:31.9163920Z ##[debug]Correlation ID from ARM api call response : 75cff306-33c1-49ac-b7dc-93778c09fa62
+2025-09-22T13:50:31.9166846Z ##[debug]MSAL - getMSALToken called. force=undefined
+2025-09-22T13:50:31.9168739Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Info - acquireTokenByClientCredential called
+2025-09-22T13:50:31.9169934Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - initializeRequestScopes called
+2025-09-22T13:50:31.9174469Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [c85f264e-2dc3-42d4-90a4-65def671a1fb] : @azure/msal-node@3.5.3 : Verbose - createAuthority called
+2025-09-22T13:50:31.9176599Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityResolveEndpointsAsync
+2025-09-22T13:50:31.9471480Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Retrieving all cache keys
+2025-09-22T13:50:31.9472327Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:31.9477941Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:50:31.9478410Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:31.9478886Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:50:31.9479384Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+2025-09-22T13:50:31.9479839Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Known Authorities: 
+2025-09-22T13:50:31.9480271Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Authority Metadata: N/A
+2025-09-22T13:50:31.9480761Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+2025-09-22T13:50:31.9481295Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+2025-09-22T13:50:31.9481800Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+2025-09-22T13:50:31.9482274Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:50:31.9482762Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateEndpointMetadata
+2025-09-22T13:50:31.9483242Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+2025-09-22T13:50:31.9483751Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+2025-09-22T13:50:31.9484262Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+2025-09-22T13:50:31.9484755Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:50:31.9485206Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:31.9485657Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Setting cache key value store
+2025-09-22T13:50:31.9486464Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityResolveEndpointsAsync
+2025-09-22T13:50:31.9487100Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [c85f264e-2dc3-42d4-90a4-65def671a1fb] : @azure/msal-node@3.5.3 : Verbose - buildOauthClientConfiguration called
+2025-09-22T13:50:31.9487631Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+2025-09-22T13:50:31.9488221Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [c85f264e-2dc3-42d4-90a4-65def671a1fb] : @azure/msal-node@3.5.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+2025-09-22T13:50:31.9488917Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [c85f264e-2dc3-42d4-90a4-65def671a1fb] : @azure/msal-node@3.5.3 : Verbose - Client credential client created
+2025-09-22T13:50:31.9489382Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting in-memory cache
+2025-09-22T13:50:31.9489922Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:31.9490471Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: -login.windows.net-accesstoken-***-2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0-https://management.azure.com//.default--
+2025-09-22T13:50:31.9490966Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:31.9491426Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: config
+2025-09-22T13:50:31.9491899Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: hardcoded_values
+2025-09-22T13:50:31.9492394Z ##[debug][Mon, 22 Sep 2025 13:50:31 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata: found cloud discovery metadata in hardcoded_values, returning aliases
+2025-09-22T13:50:31.9492836Z ##[debug]MSAL - retrieved token - isFromCache?: true
+2025-09-22T13:50:31.9493208Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:50:31.9493905Z ##[debug][GET]https://management.azure.com/subscriptions/4f83679a-fcf1-4908-8c15-fd435488e766/resources?%24filter=resourceType+EQ+%27Microsoft.Web%2fSites%27+AND+name+EQ+%27fractal-cdtsols-dev-nexus-node%27&api-version=2016-07-01&%24skiptoken=rY%2fBCoJAFEX%2f5a1diLQSWhTppDgTyaQ5uBESdJ5NkBM1iv%2feEEarNtHuchfn3jOCqh86aRX24I9QV72%2b9R74UJv4Jo6Ny%2fPQVF5mInlpC940bBAoNoGmHA1rXVecY0zyWFJy0Eym5yLfGzqkHSN0ESl3Cc4M%2fcKkct0Vw8rQPNDMK4ywTOqFMuF4FySyOye0%2fcBIhjuS4os5OZ%2fbO7W9dCd7fi5pdcX6atfG8q1Tgm%2fzn4RKcN7gr9xfpEqYYHoC
+2025-09-22T13:50:32.0735570Z ##[debug]Correlation ID from ARM api call response : c5862784-ce13-4ab3-9342-82bd026405b6
+2025-09-22T13:50:32.0743113Z ##[debug]MSAL - getMSALToken called. force=undefined
+2025-09-22T13:50:32.0744146Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Info - acquireTokenByClientCredential called
+2025-09-22T13:50:32.0744710Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - initializeRequestScopes called
+2025-09-22T13:50:32.0745887Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [acb1b0a8-e369-46be-b599-ce92047dbb82] : @azure/msal-node@3.5.3 : Verbose - createAuthority called
+2025-09-22T13:50:32.0746568Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityResolveEndpointsAsync
+2025-09-22T13:50:32.0747059Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Retrieving all cache keys
+2025-09-22T13:50:32.0747496Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.0748532Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:50:32.0748985Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.0749438Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:50:32.0749923Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+2025-09-22T13:50:32.0750395Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Known Authorities: 
+2025-09-22T13:50:32.0750963Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Authority Metadata: N/A
+2025-09-22T13:50:32.0751447Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+2025-09-22T13:50:32.0751991Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+2025-09-22T13:50:32.0752515Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+2025-09-22T13:50:32.0752981Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:50:32.0753445Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateEndpointMetadata
+2025-09-22T13:50:32.0753932Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+2025-09-22T13:50:32.0754442Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+2025-09-22T13:50:32.0754939Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+2025-09-22T13:50:32.0755453Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:50:32.0755899Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.0756340Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Setting cache key value store
+2025-09-22T13:50:32.0756789Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityResolveEndpointsAsync
+2025-09-22T13:50:32.0757283Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [acb1b0a8-e369-46be-b599-ce92047dbb82] : @azure/msal-node@3.5.3 : Verbose - buildOauthClientConfiguration called
+2025-09-22T13:50:32.0757790Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+2025-09-22T13:50:32.0758362Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [acb1b0a8-e369-46be-b599-ce92047dbb82] : @azure/msal-node@3.5.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+2025-09-22T13:50:32.0758950Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [acb1b0a8-e369-46be-b599-ce92047dbb82] : @azure/msal-node@3.5.3 : Verbose - Client credential client created
+2025-09-22T13:50:32.0759415Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting in-memory cache
+2025-09-22T13:50:32.0759851Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.0760483Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: -login.windows.net-accesstoken-***-2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0-https://management.azure.com//.default--
+2025-09-22T13:50:32.0760990Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.0761448Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: config
+2025-09-22T13:50:32.0761950Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: hardcoded_values
+2025-09-22T13:50:32.0762522Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata: found cloud discovery metadata in hardcoded_values, returning aliases
+2025-09-22T13:50:32.0762970Z ##[debug]MSAL - retrieved token - isFromCache?: true
+2025-09-22T13:50:32.0763332Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:50:32.0763868Z ##[debug][POST]https://management.azure.com/subscriptions/4f83679a-fcf1-4908-8c15-fd435488e766/resourceGroups/fractal-cdt-solutions-capability-building-project-dev-rg/providers/Microsoft.Web/sites/fractal-cdtsols-dev-nexus-node/config/publishingcredentials/list?api-version=2016-08-01
+2025-09-22T13:50:32.3011273Z ##[debug]Correlation ID from ARM api call response : f4e59fee-4e39-4123-82d0-cd1b4dac8a3c
+2025-09-22T13:50:32.3023873Z ##[debug]MSAL - getMSALToken called. force=undefined
+2025-09-22T13:50:32.3024387Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Info - acquireTokenByClientCredential called
+2025-09-22T13:50:32.3024873Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - initializeRequestScopes called
+2025-09-22T13:50:32.3026446Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [24b650df-0eab-4a81-ba87-0c9f332801d8] : @azure/msal-node@3.5.3 : Verbose - createAuthority called
+2025-09-22T13:50:32.3026957Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityResolveEndpointsAsync
+2025-09-22T13:50:32.3027405Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Retrieving all cache keys
+2025-09-22T13:50:32.3027833Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.3028495Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:50:32.3028944Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.3029397Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:50:32.3029881Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+2025-09-22T13:50:32.3030367Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Known Authorities: 
+2025-09-22T13:50:32.3030790Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Authority Metadata: N/A
+2025-09-22T13:50:32.3031264Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+2025-09-22T13:50:32.3031801Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+2025-09-22T13:50:32.3032330Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+2025-09-22T13:50:32.3033130Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:50:32.3033611Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateEndpointMetadata
+2025-09-22T13:50:32.3034100Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+2025-09-22T13:50:32.3034607Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+2025-09-22T13:50:32.3035112Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+2025-09-22T13:50:32.3035766Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:50:32.3036228Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.3036656Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Setting cache key value store
+2025-09-22T13:50:32.3037139Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityResolveEndpointsAsync
+2025-09-22T13:50:32.3037616Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [24b650df-0eab-4a81-ba87-0c9f332801d8] : @azure/msal-node@3.5.3 : Verbose - buildOauthClientConfiguration called
+2025-09-22T13:50:32.3038147Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+2025-09-22T13:50:32.3038736Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [24b650df-0eab-4a81-ba87-0c9f332801d8] : @azure/msal-node@3.5.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+2025-09-22T13:50:32.3039312Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [24b650df-0eab-4a81-ba87-0c9f332801d8] : @azure/msal-node@3.5.3 : Verbose - Client credential client created
+2025-09-22T13:50:32.3039769Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting in-memory cache
+2025-09-22T13:50:32.3040198Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.3040899Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: -login.windows.net-accesstoken-***-2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0-https://management.azure.com//.default--
+2025-09-22T13:50:32.3041405Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.3041852Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: config
+2025-09-22T13:50:32.3042339Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: hardcoded_values
+2025-09-22T13:50:32.3042833Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata: found cloud discovery metadata in hardcoded_values, returning aliases
+2025-09-22T13:50:32.3043271Z ##[debug]MSAL - retrieved token - isFromCache?: true
+2025-09-22T13:50:32.3043629Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:50:32.3049700Z ##[debug][GET]https://management.azure.com/subscriptions/4f83679a-fcf1-4908-8c15-fd435488e766/resourceGroups/fractal-cdt-solutions-capability-building-project-dev-rg/providers/Microsoft.Web/sites/fractal-cdtsols-dev-nexus-node/basicPublishingCredentialsPolicies/scm?api-version=2022-03-01
+2025-09-22T13:50:32.6878222Z ##[debug]Correlation ID from ARM api call response : e49a1452-6cda-4510-ad80-f489a5a0bfe1
+2025-09-22T13:50:32.6879564Z ##[debug]Site Publishing Policy check: {"id":"/subscriptions/4f83679a-fcf1-4908-8c15-fd435488e766/resourceGroups/fractal-cdt-solutions-capability-building-project-dev-rg/providers/Microsoft.Web/sites/fractal-cdtsols-dev-nexus-node/basicPublishingCredentialsPolicies/scm","name":"scm","type":"Microsoft.Web/sites/basicPublishingCredentialsPolicies","location":"East US 2","tags":{"Client":"fractal","Client-Billable":"yes","Environment":"dev","Owner":"Debasis Panda","Project":"22-ccl-4839","Project-Name":"CDTSols","SOW":"22-CCL-4839-sow-1"},"properties":{"allow":true}}
+2025-09-22T13:50:32.6882133Z ##[debug]Web App does allow SCM access
+2025-09-22T13:50:32.6882507Z ##[debug]set AZURE_APP_SERVICE_KUDU_production_PASSWORD=********
+2025-09-22T13:50:32.6888667Z ##[debug]Processed: ##vso[task.setvariable variable=AZURE_APP_SERVICE_KUDU_production_PASSWORD;isOutput=false;issecret=true;]***
+2025-09-22T13:50:32.6889128Z ##[debug]Using Basic authentication method for Kudu service.
+2025-09-22T13:50:32.7070222Z ##[debug]Processed: ##vso[telemetry.publish area=TaskDeploymentMethod;feature=AzureAppServiceDeployment]{"authMethod":"Basic"}
+2025-09-22T13:50:32.7070927Z ##[debug]Resource Group: fractal-cdt-solutions-capability-building-project-dev-rg
+2025-09-22T13:50:32.7071313Z ##[debug]Deployment Step Started
+2025-09-22T13:50:32.7071686Z ##[debug]Performing container based deployment.
+2025-09-22T13:50:32.7072057Z ##[debug]DockerNamespace=fractalcdtdev.azurecr.io
+2025-09-22T13:50:32.7072536Z ##[debug]DockerRepository=nexus-node:0.1.15608
+2025-09-22T13:50:32.7072895Z ##[debug]DockerImageTag=undefined
+2025-09-22T13:50:32.7073321Z ##[debug]Deploying an image fractalcdtdev.azurecr.io/nexus-node:0.1.15608 to the webapp fractal-cdtsols-dev-nexus-node
+2025-09-22T13:50:32.7073736Z ##[debug]Updating the webapp configuration.
+2025-09-22T13:50:32.7074100Z ##[debug]CONATINER UPDATE CONFIG VALUES : [object Object]
+2025-09-22T13:50:32.7074457Z Trying to update App Service Configuration settings. Data: {"linuxFxVersion":"DOCKER|fractalcdtdev.azurecr.io/nexus-node:0.1.15608"}
+2025-09-22T13:50:32.7074833Z ##[debug]MSAL - getMSALToken called. force=undefined
+2025-09-22T13:50:32.7075257Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Info - acquireTokenByClientCredential called
+2025-09-22T13:50:32.7075703Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - initializeRequestScopes called
+2025-09-22T13:50:32.7076165Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [8320b760-449c-4bf4-9e2c-6460bbb21f5c] : @azure/msal-node@3.5.3 : Verbose - createAuthority called
+2025-09-22T13:50:32.7076647Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityResolveEndpointsAsync
+2025-09-22T13:50:32.7077096Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Retrieving all cache keys
+2025-09-22T13:50:32.7077524Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.7078107Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:50:32.7078561Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.7079021Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:50:32.7079505Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+2025-09-22T13:50:32.7079990Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Known Authorities: 
+2025-09-22T13:50:32.7080426Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Authority Metadata: N/A
+2025-09-22T13:50:32.7081188Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+2025-09-22T13:50:32.7081738Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+2025-09-22T13:50:32.7082248Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+2025-09-22T13:50:32.7082717Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:50:32.7083198Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateEndpointMetadata
+2025-09-22T13:50:32.7083766Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+2025-09-22T13:50:32.7084280Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+2025-09-22T13:50:32.7084802Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+2025-09-22T13:50:32.7085375Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:50:32.7085834Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.7086272Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Setting cache key value store
+2025-09-22T13:50:32.7086876Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityResolveEndpointsAsync
+2025-09-22T13:50:32.7087363Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [8320b760-449c-4bf4-9e2c-6460bbb21f5c] : @azure/msal-node@3.5.3 : Verbose - buildOauthClientConfiguration called
+2025-09-22T13:50:32.7087880Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+2025-09-22T13:50:32.7088453Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [8320b760-449c-4bf4-9e2c-6460bbb21f5c] : @azure/msal-node@3.5.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+2025-09-22T13:50:32.7089033Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [8320b760-449c-4bf4-9e2c-6460bbb21f5c] : @azure/msal-node@3.5.3 : Verbose - Client credential client created
+2025-09-22T13:50:32.7089500Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting in-memory cache
+2025-09-22T13:50:32.7089933Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.7090499Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: -login.windows.net-accesstoken-***-2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0-https://management.azure.com//.default--
+2025-09-22T13:50:32.7090993Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:50:32.7091470Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: config
+2025-09-22T13:50:32.7091951Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: hardcoded_values
+2025-09-22T13:50:32.7092452Z ##[debug][Mon, 22 Sep 2025 13:50:32 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata: found cloud discovery metadata in hardcoded_values, returning aliases
+2025-09-22T13:50:32.7093037Z ##[debug]MSAL - retrieved token - isFromCache?: true
+2025-09-22T13:50:32.7093408Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:50:32.7093913Z ##[debug][PATCH]https://management.azure.com/subscriptions/4f83679a-fcf1-4908-8c15-fd435488e766/resourceGroups/fractal-cdt-solutions-capability-building-project-dev-rg/providers/Microsoft.Web/sites/fractal-cdtsols-dev-nexus-node/config/web?api-version=2018-02-01
+2025-09-22T13:50:33.4778451Z ##[debug]Agent environment resources - Disk: / Available 147660.05 MB out of 253873.92 MB, Memory: Used 2463.00 MB out of 15991.00 MB, CPU: Usage 44.66%
+2025-09-22T13:50:38.4798711Z ##[debug]Agent environment resources - Disk: / Available 147659.79 MB out of 253873.92 MB, Memory: Used 2458.00 MB out of 15991.00 MB, CPU: Usage 31.60%
+2025-09-22T13:50:43.4775915Z ##[debug]Agent environment resources - Disk: / Available 147659.50 MB out of 253873.92 MB, Memory: Used 2458.00 MB out of 15991.00 MB, CPU: Usage 31.99%
+2025-09-22T13:50:48.4834782Z ##[debug]Agent environment resources - Disk: / Available 147659.23 MB out of 253873.92 MB, Memory: Used 2456.00 MB out of 15991.00 MB, CPU: Usage 35.34%
+2025-09-22T13:50:53.4874123Z ##[debug]Agent environment resources - Disk: / Available 147658.93 MB out of 253873.92 MB, Memory: Used 2456.00 MB out of 15991.00 MB, CPU: Usage 35.34%
+2025-09-22T13:50:58.4860459Z ##[debug]Agent environment resources - Disk: / Available 147658.93 MB out of 253873.92 MB, Memory: Used 2456.00 MB out of 15991.00 MB, CPU: Usage 31.68%
+2025-09-22T13:51:03.4863833Z ##[debug]Agent environment resources - Disk: / Available 147658.64 MB out of 253873.92 MB, Memory: Used 2455.00 MB out of 15991.00 MB, CPU: Usage 31.68%
+2025-09-22T13:51:04.2803589Z ##[debug]Correlation ID from ARM api call response : 64e2c25a-dc5f-446a-b3ce-9bc949c385fa
+2025-09-22T13:51:04.2804076Z Updated App Service Configuration settings.
+2025-09-22T13:51:04.2804388Z ##[debug]Updating web app settings
+2025-09-22T13:51:04.2804745Z ##[debug]DockerRepositoryAccess=undefined
+2025-09-22T13:51:04.2810201Z Trying to update App Service Application settings. Data: {"DOCKER_CUSTOM_IMAGE_NAME":"fractalcdtdev.azurecr.io/nexus-node:0.1.15608"}
+2025-09-22T13:51:04.2816295Z ##[debug]MSAL - getMSALToken called. force=undefined
+2025-09-22T13:51:04.2816895Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Info - acquireTokenByClientCredential called
+2025-09-22T13:51:04.2817360Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - initializeRequestScopes called
+2025-09-22T13:51:04.2820519Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [9a1cb152-1b95-418a-90c5-1ace2211bde9] : @azure/msal-node@3.5.3 : Verbose - createAuthority called
+2025-09-22T13:51:04.2884038Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityResolveEndpointsAsync
+2025-09-22T13:51:04.2885051Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Retrieving all cache keys
+2025-09-22T13:51:04.2885511Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:04.2886100Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:51:04.2886661Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:04.2887128Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:51:04.2887625Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+2025-09-22T13:51:04.2888091Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Known Authorities: 
+2025-09-22T13:51:04.2888518Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Authority Metadata: N/A
+2025-09-22T13:51:04.2889364Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+2025-09-22T13:51:04.2889916Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+2025-09-22T13:51:04.2890433Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+2025-09-22T13:51:04.2890923Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:51:04.2891706Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateEndpointMetadata
+2025-09-22T13:51:04.2892191Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+2025-09-22T13:51:04.2892708Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+2025-09-22T13:51:04.2893227Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+2025-09-22T13:51:04.2893811Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:51:04.2894277Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:04.2894715Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Setting cache key value store
+2025-09-22T13:51:04.2895166Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityResolveEndpointsAsync
+2025-09-22T13:51:04.2895671Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [9a1cb152-1b95-418a-90c5-1ace2211bde9] : @azure/msal-node@3.5.3 : Verbose - buildOauthClientConfiguration called
+2025-09-22T13:51:04.2896166Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+2025-09-22T13:51:04.2896740Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [9a1cb152-1b95-418a-90c5-1ace2211bde9] : @azure/msal-node@3.5.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+2025-09-22T13:51:04.2897327Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [9a1cb152-1b95-418a-90c5-1ace2211bde9] : @azure/msal-node@3.5.3 : Verbose - Client credential client created
+2025-09-22T13:51:04.2897790Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting in-memory cache
+2025-09-22T13:51:04.2898229Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:04.2898776Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: -login.windows.net-accesstoken-***-2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0-https://management.azure.com//.default--
+2025-09-22T13:51:04.2899272Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:04.2899736Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: config
+2025-09-22T13:51:04.2900209Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: hardcoded_values
+2025-09-22T13:51:04.2900712Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata: found cloud discovery metadata in hardcoded_values, returning aliases
+2025-09-22T13:51:04.2901266Z ##[debug]MSAL - retrieved token - isFromCache?: true
+2025-09-22T13:51:04.2901959Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:51:04.2902468Z ##[debug][POST]https://management.azure.com/subscriptions/4f83679a-fcf1-4908-8c15-fd435488e766/resourceGroups/fractal-cdt-solutions-capability-building-project-dev-rg/providers/Microsoft.Web/sites/fractal-cdtsols-dev-nexus-node/config/appsettings/list?api-version=2016-08-01
+2025-09-22T13:51:04.7888928Z ##[debug]Correlation ID from ARM api call response : eef4b978-b620-423f-aae1-b999556876ab
+2025-09-22T13:51:04.7889750Z ##[debug]Value of DOCKER_CUSTOM_IMAGE_NAME has been changed to fractalcdtdev.azurecr.io/nexus-node:0.1.15608
+2025-09-22T13:51:04.7891367Z ##[debug]MSAL - getMSALToken called. force=undefined
+2025-09-22T13:51:04.7891948Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Info - acquireTokenByClientCredential called
+2025-09-22T13:51:04.7892521Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - initializeRequestScopes called
+2025-09-22T13:51:04.7893387Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [c2a7d1c3-50ea-4374-836f-087b2fe907cc] : @azure/msal-node@3.5.3 : Verbose - createAuthority called
+2025-09-22T13:51:04.7894605Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityResolveEndpointsAsync
+2025-09-22T13:51:04.7895179Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Retrieving all cache keys
+2025-09-22T13:51:04.7895732Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:04.7896413Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:51:04.7896995Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:04.7897546Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:51:04.7898123Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+2025-09-22T13:51:04.7898684Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Known Authorities: 
+2025-09-22T13:51:04.7899206Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Authority Metadata: N/A
+2025-09-22T13:51:04.7899771Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+2025-09-22T13:51:04.7900430Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+2025-09-22T13:51:04.7901033Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+2025-09-22T13:51:04.7901609Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:51:04.7902176Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateEndpointMetadata
+2025-09-22T13:51:04.7902737Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+2025-09-22T13:51:04.7903357Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+2025-09-22T13:51:04.7904150Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+2025-09-22T13:51:04.7904767Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:51:04.7905309Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:04.7905830Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Setting cache key value store
+2025-09-22T13:51:04.7906387Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityResolveEndpointsAsync
+2025-09-22T13:51:04.7906961Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [c2a7d1c3-50ea-4374-836f-087b2fe907cc] : @azure/msal-node@3.5.3 : Verbose - buildOauthClientConfiguration called
+2025-09-22T13:51:04.7907670Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+2025-09-22T13:51:04.7908340Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [c2a7d1c3-50ea-4374-836f-087b2fe907cc] : @azure/msal-node@3.5.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+2025-09-22T13:51:04.7909008Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [c2a7d1c3-50ea-4374-836f-087b2fe907cc] : @azure/msal-node@3.5.3 : Verbose - Client credential client created
+2025-09-22T13:51:04.7909574Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting in-memory cache
+2025-09-22T13:51:04.7910089Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:04.7910738Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: -login.windows.net-accesstoken-***-2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0-https://management.azure.com//.default--
+2025-09-22T13:51:04.7911327Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:04.7911890Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: config
+2025-09-22T13:51:04.7912467Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: hardcoded_values
+2025-09-22T13:51:04.7913003Z ##[debug][Mon, 22 Sep 2025 13:51:04 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata: found cloud discovery metadata in hardcoded_values, returning aliases
+2025-09-22T13:51:04.7918004Z ##[debug]MSAL - retrieved token - isFromCache?: true
+2025-09-22T13:51:04.7918631Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:51:04.7919228Z ##[debug][PUT]https://management.azure.com/subscriptions/4f83679a-fcf1-4908-8c15-fd435488e766/resourceGroups/fractal-cdt-solutions-capability-building-project-dev-rg/providers/Microsoft.Web/sites/fractal-cdtsols-dev-nexus-node/config/appsettings?api-version=2016-08-01
+2025-09-22T13:51:08.4852742Z ##[debug]Agent environment resources - Disk: / Available 147658.36 MB out of 253873.92 MB, Memory: Used 2457.00 MB out of 15991.00 MB, CPU: Usage 32.47%
+2025-09-22T13:51:13.4871259Z ##[debug]Agent environment resources - Disk: / Available 147658.03 MB out of 253873.92 MB, Memory: Used 2457.00 MB out of 15991.00 MB, CPU: Usage 31.17%
+2025-09-22T13:51:18.4869219Z ##[debug]Agent environment resources - Disk: / Available 147657.63 MB out of 253873.92 MB, Memory: Used 2458.00 MB out of 15991.00 MB, CPU: Usage 33.69%
+2025-09-22T13:51:24.5877381Z ##[debug]Agent environment resources - Disk: / Available 147657.37 MB out of 253873.92 MB, Memory: Used 2457.00 MB out of 15991.00 MB, CPU: Usage 32.54%
+2025-09-22T13:51:29.5855074Z ##[debug]Agent environment resources - Disk: / Available 147657.10 MB out of 253873.92 MB, Memory: Used 2458.00 MB out of 15991.00 MB, CPU: Usage 32.54%
+2025-09-22T13:51:34.5869501Z ##[debug]Agent environment resources - Disk: / Available 147656.83 MB out of 253873.92 MB, Memory: Used 2330.00 MB out of 15991.00 MB, CPU: Usage 32.55%
+2025-09-22T13:51:35.9165151Z ##[debug]Correlation ID from ARM api call response : ba8abbc5-9ea7-4c08-b09e-c639aff1a168
+2025-09-22T13:51:35.9165573Z Updated App Service Application settings and Kudu Application settings.
+2025-09-22T13:51:35.9168394Z ##[debug]MSAL - getMSALToken called. force=undefined
+2025-09-22T13:51:35.9181040Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Info - acquireTokenByClientCredential called
+2025-09-22T13:51:35.9181515Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - initializeRequestScopes called
+2025-09-22T13:51:35.9182437Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [0dfcef1b-f666-4577-b8ea-3a0625cadbd9] : @azure/msal-node@3.5.3 : Verbose - createAuthority called
+2025-09-22T13:51:35.9182967Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityResolveEndpointsAsync
+2025-09-22T13:51:35.9183453Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Retrieving all cache keys
+2025-09-22T13:51:35.9183896Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:35.9184522Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:51:35.9184988Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:35.9185459Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:51:35.9185964Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+2025-09-22T13:51:35.9186429Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Known Authorities: 
+2025-09-22T13:51:35.9186858Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Authority Metadata: N/A
+2025-09-22T13:51:35.9187334Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+2025-09-22T13:51:35.9187890Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+2025-09-22T13:51:35.9188427Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+2025-09-22T13:51:35.9188940Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:51:35.9189421Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateEndpointMetadata
+2025-09-22T13:51:35.9189892Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+2025-09-22T13:51:35.9190417Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+2025-09-22T13:51:35.9190920Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+2025-09-22T13:51:35.9191438Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:51:35.9191885Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:35.9192461Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Setting cache key value store
+2025-09-22T13:51:35.9192912Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityResolveEndpointsAsync
+2025-09-22T13:51:35.9193415Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [0dfcef1b-f666-4577-b8ea-3a0625cadbd9] : @azure/msal-node@3.5.3 : Verbose - buildOauthClientConfiguration called
+2025-09-22T13:51:35.9193913Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+2025-09-22T13:51:35.9194501Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [0dfcef1b-f666-4577-b8ea-3a0625cadbd9] : @azure/msal-node@3.5.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+2025-09-22T13:51:35.9195151Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [0dfcef1b-f666-4577-b8ea-3a0625cadbd9] : @azure/msal-node@3.5.3 : Verbose - Client credential client created
+2025-09-22T13:51:35.9195608Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting in-memory cache
+2025-09-22T13:51:35.9196053Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:35.9196601Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: -login.windows.net-accesstoken-***-2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0-https://management.azure.com//.default--
+2025-09-22T13:51:35.9197093Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:35.9197554Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: config
+2025-09-22T13:51:35.9198035Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: hardcoded_values
+2025-09-22T13:51:35.9198550Z ##[debug][Mon, 22 Sep 2025 13:51:35 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata: found cloud discovery metadata in hardcoded_values, returning aliases
+2025-09-22T13:51:35.9199020Z ##[debug]MSAL - retrieved token - isFromCache?: true
+2025-09-22T13:51:35.9199388Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:51:35.9199898Z ##[debug][POST]https://management.azure.com/subscriptions/4f83679a-fcf1-4908-8c15-fd435488e766/resourceGroups/fractal-cdt-solutions-capability-building-project-dev-rg/providers/Microsoft.Web/sites/fractal-cdtsols-dev-nexus-node/config/publishingcredentials/list?api-version=2016-08-01
+2025-09-22T13:51:36.3966835Z ##[debug]Correlation ID from ARM api call response : 10294740-4cd4-4209-b319-f6f299ba5e55
+2025-09-22T13:51:36.3967677Z ##[debug]MSAL - getMSALToken called. force=undefined
+2025-09-22T13:51:36.3968900Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Info - acquireTokenByClientCredential called
+2025-09-22T13:51:36.3969537Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - initializeRequestScopes called
+2025-09-22T13:51:36.3971653Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [50221d3e-d3e4-4045-9d7d-1222a25cb612] : @azure/msal-node@3.5.3 : Verbose - createAuthority called
+2025-09-22T13:51:36.3972404Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityResolveEndpointsAsync
+2025-09-22T13:51:36.3972937Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Retrieving all cache keys
+2025-09-22T13:51:36.3973459Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:36.3975020Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:51:36.3975937Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:36.3976401Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:51:36.3976889Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+2025-09-22T13:51:36.3977363Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Known Authorities: 
+2025-09-22T13:51:36.3977806Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Authority Metadata: N/A
+2025-09-22T13:51:36.3978402Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+2025-09-22T13:51:36.3978957Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+2025-09-22T13:51:36.3979468Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+2025-09-22T13:51:36.3979958Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:51:36.3980439Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateEndpointMetadata
+2025-09-22T13:51:36.3980908Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+2025-09-22T13:51:36.3981422Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+2025-09-22T13:51:36.3981943Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+2025-09-22T13:51:36.3982445Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:51:36.3982916Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:36.3983348Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Setting cache key value store
+2025-09-22T13:51:36.3983789Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityResolveEndpointsAsync
+2025-09-22T13:51:36.3984284Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [50221d3e-d3e4-4045-9d7d-1222a25cb612] : @azure/msal-node@3.5.3 : Verbose - buildOauthClientConfiguration called
+2025-09-22T13:51:36.3984798Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+2025-09-22T13:51:36.3985374Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [50221d3e-d3e4-4045-9d7d-1222a25cb612] : @azure/msal-node@3.5.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+2025-09-22T13:51:36.3985974Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [50221d3e-d3e4-4045-9d7d-1222a25cb612] : @azure/msal-node@3.5.3 : Verbose - Client credential client created
+2025-09-22T13:51:36.3986435Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting in-memory cache
+2025-09-22T13:51:36.3986871Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:36.3987506Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: -login.windows.net-accesstoken-***-2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0-https://management.azure.com//.default--
+2025-09-22T13:51:36.3988006Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:36.3988486Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: config
+2025-09-22T13:51:36.3988961Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: hardcoded_values
+2025-09-22T13:51:36.3989463Z ##[debug][Mon, 22 Sep 2025 13:51:36 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata: found cloud discovery metadata in hardcoded_values, returning aliases
+2025-09-22T13:51:36.3989996Z ##[debug]MSAL - retrieved token - isFromCache?: true
+2025-09-22T13:51:36.3990359Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:51:36.3990894Z ##[debug][GET]https://management.azure.com/subscriptions/4f83679a-fcf1-4908-8c15-fd435488e766/resourceGroups/fractal-cdt-solutions-capability-building-project-dev-rg/providers/Microsoft.Web/sites/fractal-cdtsols-dev-nexus-node/basicPublishingCredentialsPolicies/scm?api-version=2022-03-01
+2025-09-22T13:51:36.5351717Z ##[debug]Correlation ID from ARM api call response : 8640890a-9f7f-43e6-8154-e00e9ba02d70
+2025-09-22T13:51:36.5352642Z ##[debug]Site Publishing Policy check: {"id":"/subscriptions/4f83679a-fcf1-4908-8c15-fd435488e766/resourceGroups/fractal-cdt-solutions-capability-building-project-dev-rg/providers/Microsoft.Web/sites/fractal-cdtsols-dev-nexus-node/basicPublishingCredentialsPolicies/scm","name":"scm","type":"Microsoft.Web/sites/basicPublishingCredentialsPolicies","location":"East US 2","tags":{"Client":"fractal","Client-Billable":"yes","Environment":"dev","Owner":"Debasis Panda","Project":"22-ccl-4839","Project-Name":"CDTSols","SOW":"22-CCL-4839-sow-1"},"properties":{"allow":true}}
+2025-09-22T13:51:36.5353394Z ##[debug]Web App does allow SCM access
+2025-09-22T13:51:36.5353766Z ##[debug]set AZURE_APP_SERVICE_KUDU_production_PASSWORD=********
+2025-09-22T13:51:36.5357359Z ##[debug]Processed: ##vso[task.setvariable variable=AZURE_APP_SERVICE_KUDU_production_PASSWORD;isOutput=false;issecret=true;]***
+2025-09-22T13:51:36.5357828Z ##[debug]Using Basic authentication method for Kudu service.
+2025-09-22T13:51:36.5535656Z ##[debug]Processed: ##vso[telemetry.publish area=TaskDeploymentMethod;feature=AzureAppServiceDeployment]{"authMethod":"Basic"}
+2025-09-22T13:51:36.5536356Z ##[debug]retrieving values from Kudu service to check if new values are updated
+2025-09-22T13:51:36.5536826Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:51:36.5537687Z ##[debug][GET]https://$fractal-cdtsols-dev-nexus-node:***@fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net/api/settings
+2025-09-22T13:51:38.9520452Z ##[debug]loaded affinity cookie ["ARRAffinity=6579d1445ebfd83358d5da5d87f00e5f0cecb1bc7c18f2e4277d913f46b43676;Path=/;HttpOnly;Secure;Domain=fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net","ARRAffinitySameSite=6579d1445ebfd83358d5da5d87f00e5f0cecb1bc7c18f2e4277d913f46b43676;Path=/;HttpOnly;SameSite=None;Secure;Domain=fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net"]
+2025-09-22T13:51:38.9522309Z ##[debug]getAppSettings. Data: {"statusCode":200,"statusMessage":"OK","headers":{"content-length":"839","content-type":"application/json; charset=utf-8","date":"Mon, 22 Sep 2025 13:51:38 GMT","server":"Kestrel","set-cookie":["ARRAffinity=6579d1445ebfd83358d5da5d87f00e5f0cecb1bc7c18f2e4277d913f46b43676;Path=/;HttpOnly;Secure;Domain=fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net","ARRAffinitySameSite=6579d1445ebfd83358d5da5d87f00e5f0cecb1bc7c18f2e4277d913f46b43676;Path=/;HttpOnly;SameSite=None;Secure;Domain=fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net"]},"body":{"deployment_branch":"master","SCM_TRACE_LEVEL":"Verbose","SCM_COMMAND_IDLE_TIMEOUT":"60","SCM_LOGSTREAM_TIMEOUT":"7200","SCM_BUILD_ARGS":"","WEBSITE_AUTH_ENABLED":"False","WEBSITE_SITE_NAME":"fractal-cdtsols-dev-nexus-node","FUNCTIONS_RUNTIME_SCALE_MONITORING_ENABLED":"0","WEBSITE_AUTH_LOGOUT_PATH":"/.auth/logout","ScmType":"VSTSRM","WEBSITE_AUTH_AUTO_AAD":"False","WEBSITE_CONTENTOVERVNET":"1","WEBSITE_VNET_ROUTE_ALL":"true","WEBSITE_ENABLE_SSL":"False","DOCKER_CUSTOM_IMAGE_NAME":"fractalcdtdev.azurecr.io/nexus-node:0.1.15552","WEBSITE_DEFAULT_HOSTNAME":"fractal-cdtsols-dev-nexus-node.azurewebsites.net","WEBSITE_ENABLE_SYNC_UPDATE_SITE":"true","WEBSITE_PULL_IMAGE_OVER_VNET":"true","WEBSITES_PORT":"443","WEBSITES_CONTAINER_START_TIME_LIMIT":"360","SCM_USE_LIBGIT2SHARP_REPOSITORY":"0","REMOTEDEBUGGINGVERSION":"17.12.11017.4296"}}
+2025-09-22T13:51:38.9523962Z ##[debug]New properties are not updated in Kudu service :(
+2025-09-22T13:51:39.5859075Z ##[debug]Agent environment resources - Disk: / Available 147656.48 MB out of 253873.92 MB, Memory: Used 2330.00 MB out of 15991.00 MB, CPU: Usage 32.63%
+2025-09-22T13:51:43.9572668Z ##[debug]setting affinity cookie ["ARRAffinity=6579d1445ebfd83358d5da5d87f00e5f0cecb1bc7c18f2e4277d913f46b43676;Path=/;HttpOnly;Secure;Domain=fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net","ARRAffinitySameSite=6579d1445ebfd83358d5da5d87f00e5f0cecb1bc7c18f2e4277d913f46b43676;Path=/;HttpOnly;SameSite=None;Secure;Domain=fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net"]
+2025-09-22T13:51:43.9573948Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:51:43.9627315Z ##[debug][GET]https://$fractal-cdtsols-dev-nexus-node:***@fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net/api/settings
+2025-09-22T13:51:44.5863459Z ##[debug]Agent environment resources - Disk: / Available 147656.18 MB out of 253873.92 MB, Memory: Used 2332.00 MB out of 15991.00 MB, CPU: Usage 32.63%
+2025-09-22T13:51:45.0180912Z ##[debug]getAppSettings. Data: {"statusCode":200,"statusMessage":"OK","headers":{"content-length":"839","content-type":"application/json; charset=utf-8","date":"Mon, 22 Sep 2025 13:51:44 GMT","server":"Kestrel"},"body":{"deployment_branch":"master","SCM_TRACE_LEVEL":"Verbose","SCM_COMMAND_IDLE_TIMEOUT":"60","SCM_LOGSTREAM_TIMEOUT":"7200","SCM_BUILD_ARGS":"","WEBSITE_AUTH_AUTO_AAD":"False","WEBSITE_VNET_ROUTE_ALL":"true","WEBSITE_DEFAULT_HOSTNAME":"fractal-cdtsols-dev-nexus-node.azurewebsites.net","WEBSITE_ENABLE_SYNC_UPDATE_SITE":"true","DOCKER_CUSTOM_IMAGE_NAME":"fractalcdtdev.azurecr.io/nexus-node:0.1.15608","WEBSITE_SITE_NAME":"fractal-cdtsols-dev-nexus-node","WEBSITE_AUTH_LOGOUT_PATH":"/.auth/logout","FUNCTIONS_RUNTIME_SCALE_MONITORING_ENABLED":"0","WEBSITE_ENABLE_SSL":"False","WEBSITE_AUTH_ENABLED":"False","WEBSITE_CONTENTOVERVNET":"1","WEBSITE_PULL_IMAGE_OVER_VNET":"true","SCM_USE_LIBGIT2SHARP_REPOSITORY":"0","WEBSITES_CONTAINER_START_TIME_LIMIT":"360","WEBSITES_PORT":"443","REMOTEDEBUGGINGVERSION":"17.12.11017.4296","ScmType":"VSTSRM"}}
+2025-09-22T13:51:45.0182073Z ##[debug]New properties are updated in Kudu service.
+2025-09-22T13:51:45.0182348Z Updated App Service Application settings and Kudu Application settings.
+2025-09-22T13:51:45.0185189Z ##[debug]MSAL - getMSALToken called. force=undefined
+2025-09-22T13:51:45.0185817Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Info - acquireTokenByClientCredential called
+2025-09-22T13:51:45.0186463Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - initializeRequestScopes called
+2025-09-22T13:51:45.0187939Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [18304ec2-dcd8-4a3e-bfb8-07b9973ba8fb] : @azure/msal-node@3.5.3 : Verbose - createAuthority called
+2025-09-22T13:51:45.0188971Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityResolveEndpointsAsync
+2025-09-22T13:51:45.0189500Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Retrieving all cache keys
+2025-09-22T13:51:45.0190038Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:45.0191034Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:51:45.0191593Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:45.0192148Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:51:45.0192709Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+2025-09-22T13:51:45.0193261Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Known Authorities: 
+2025-09-22T13:51:45.0193909Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Authority Metadata: N/A
+2025-09-22T13:51:45.0194471Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+2025-09-22T13:51:45.0195108Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+2025-09-22T13:51:45.0195689Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+2025-09-22T13:51:45.0196251Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:51:45.0196795Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateEndpointMetadata
+2025-09-22T13:51:45.0197344Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+2025-09-22T13:51:45.0197954Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+2025-09-22T13:51:45.0198525Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+2025-09-22T13:51:45.0199144Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:51:45.0199680Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:45.0200199Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Setting cache key value store
+2025-09-22T13:51:45.0200746Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityResolveEndpointsAsync
+2025-09-22T13:51:45.0201304Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [18304ec2-dcd8-4a3e-bfb8-07b9973ba8fb] : @azure/msal-node@3.5.3 : Verbose - buildOauthClientConfiguration called
+2025-09-22T13:51:45.0201900Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+2025-09-22T13:51:45.0202551Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [18304ec2-dcd8-4a3e-bfb8-07b9973ba8fb] : @azure/msal-node@3.5.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+2025-09-22T13:51:45.0203204Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [18304ec2-dcd8-4a3e-bfb8-07b9973ba8fb] : @azure/msal-node@3.5.3 : Verbose - Client credential client created
+2025-09-22T13:51:45.0203768Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting in-memory cache
+2025-09-22T13:51:45.0204282Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:45.0205082Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: -login.windows.net-accesstoken-***-2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0-https://management.azure.com//.default--
+2025-09-22T13:51:45.0205655Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:45.0206303Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: config
+2025-09-22T13:51:45.0207055Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: hardcoded_values
+2025-09-22T13:51:45.0208246Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata: found cloud discovery metadata in hardcoded_values, returning aliases
+2025-09-22T13:51:45.0208714Z ##[debug]MSAL - retrieved token - isFromCache?: true
+2025-09-22T13:51:45.0209088Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:51:45.0209588Z ##[debug][GET]https://management.azure.com/subscriptions/4f83679a-fcf1-4908-8c15-fd435488e766/resourceGroups/fractal-cdt-solutions-capability-building-project-dev-rg/providers/Microsoft.Web/sites/fractal-cdtsols-dev-nexus-node/config/web?api-version=2018-02-01
+2025-09-22T13:51:45.1858004Z ##[debug]Correlation ID from ARM api call response : b8253395-ac16-4321-8293-f20935418a16
+2025-09-22T13:51:45.1860583Z ##[debug]SCM Type is VSTSRM
+2025-09-22T13:51:45.1861048Z ##[debug]Updating metadata with latest pipeline details
+2025-09-22T13:51:45.1861516Z ##[debug]system.teamfoundationCollectionUri=https://dev.azure.com/fractal-cdt-22-ccl-4839/
+2025-09-22T13:51:45.1862015Z ##[debug]system.teamprojectId=811036b9-edb0-44d9-9134-44d019065cd2
+2025-09-22T13:51:45.1862442Z ##[debug]release.definitionId=undefined
+2025-09-22T13:51:45.1869066Z ##[debug]system.collectionId=3688ea08-8860-4461-89cd-4b00c7130c29
+2025-09-22T13:51:45.1869524Z ##[debug]system.definitionId=144
+2025-09-22T13:51:45.1878091Z ##[debug]MSAL - getMSALToken called. force=undefined
+2025-09-22T13:51:45.1880306Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Info - acquireTokenByClientCredential called
+2025-09-22T13:51:45.1880864Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - initializeRequestScopes called
+2025-09-22T13:51:45.1881439Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [3499b94e-894b-47db-928d-19df90d00450] : @azure/msal-node@3.5.3 : Verbose - createAuthority called
+2025-09-22T13:51:45.1882011Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityResolveEndpointsAsync
+2025-09-22T13:51:45.1882560Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Retrieving all cache keys
+2025-09-22T13:51:45.1883096Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:45.1883778Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:51:45.1884330Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:45.1884884Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:51:45.1885531Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+2025-09-22T13:51:45.1886018Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Known Authorities: 
+2025-09-22T13:51:45.1886626Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Authority Metadata: N/A
+2025-09-22T13:51:45.1887157Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+2025-09-22T13:51:45.1888105Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+2025-09-22T13:51:45.1888650Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+2025-09-22T13:51:45.1889211Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:51:45.1889728Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateEndpointMetadata
+2025-09-22T13:51:45.1890342Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+2025-09-22T13:51:45.1890869Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+2025-09-22T13:51:45.1891409Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+2025-09-22T13:51:45.1893314Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:51:45.1893800Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:45.1894268Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Setting cache key value store
+2025-09-22T13:51:45.1894757Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityResolveEndpointsAsync
+2025-09-22T13:51:45.1895250Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [3499b94e-894b-47db-928d-19df90d00450] : @azure/msal-node@3.5.3 : Verbose - buildOauthClientConfiguration called
+2025-09-22T13:51:45.1895779Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+2025-09-22T13:51:45.1896362Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [3499b94e-894b-47db-928d-19df90d00450] : @azure/msal-node@3.5.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+2025-09-22T13:51:45.1896946Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [3499b94e-894b-47db-928d-19df90d00450] : @azure/msal-node@3.5.3 : Verbose - Client credential client created
+2025-09-22T13:51:45.1897434Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting in-memory cache
+2025-09-22T13:51:45.1897884Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:45.1898452Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: -login.windows.net-accesstoken-***-2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0-https://management.azure.com//.default--
+2025-09-22T13:51:45.1898956Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:45.1899409Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: config
+2025-09-22T13:51:45.1899884Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: hardcoded_values
+2025-09-22T13:51:45.1900419Z ##[debug][Mon, 22 Sep 2025 13:51:45 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata: found cloud discovery metadata in hardcoded_values, returning aliases
+2025-09-22T13:51:45.1901032Z ##[debug]MSAL - retrieved token - isFromCache?: true
+2025-09-22T13:51:45.1901400Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:51:45.1901937Z ##[debug][POST]https://management.azure.com/subscriptions/4f83679a-fcf1-4908-8c15-fd435488e766/resourceGroups/fractal-cdt-solutions-capability-building-project-dev-rg/providers/Microsoft.Web/sites/fractal-cdtsols-dev-nexus-node/config/metadata/list?api-version=2016-08-01
+2025-09-22T13:51:45.3159476Z ##[debug]Correlation ID from ARM api call response : e75cf726-6e4c-4e6a-975f-9e0ca3901f0e
+2025-09-22T13:51:45.3160135Z ##[debug]No changes in metadata properties, skipping update.
+2025-09-22T13:51:45.3162165Z ##[debug]Application Insights is not configured for the App Service. Skipping adding release annotation.
+2025-09-22T13:51:45.3166230Z ##[debug]Azure_App_Service_Deploy_PackageArtifactAlias=
+2025-09-22T13:51:45.3168139Z ##[debug]release.releaseId=undefined
+2025-09-22T13:51:45.3168554Z ##[debug]release.releaseName=undefined
+2025-09-22T13:51:45.3168970Z ##[debug]system.TeamFoundationCollectionUri=https://dev.azure.com/fractal-cdt-22-ccl-4839/
+2025-09-22T13:51:45.3169395Z ##[debug]system.teamProjectId=811036b9-edb0-44d9-9134-44d019065cd2
+2025-09-22T13:51:45.3169777Z ##[debug]build.requestedfor=Bindumadhavi Killada
+2025-09-22T13:51:45.3170122Z ##[debug]build.buildId=15608
+2025-09-22T13:51:45.3170468Z ##[debug]build.buildNumber=15608
+2025-09-22T13:51:45.3170835Z ##[debug]build.sourceVersion=406a51a741afbc0ff80d3162d6c0d4bd53de6e6d
+2025-09-22T13:51:45.3171238Z ##[debug]build.repository.name=Fractal-Nexus
+2025-09-22T13:51:45.3171599Z ##[debug]build.repository.provider=TfsGit
+2025-09-22T13:51:45.3172020Z ##[debug]build.repository.uri=https://fractal-cdt-22-ccl-4839@dev.azure.com/fractal-cdt-22-ccl-4839/Fractal-CDT-22-CCL-4839/_git/Fractal-Nexus
+2025-09-22T13:51:45.3172446Z ##[debug]build.sourcebranchname=webapp
+2025-09-22T13:51:45.3172877Z ##[debug]build.buildUri=vstfs:///Build/Build/15608
+2025-09-22T13:51:45.3173230Z ##[debug]release.releaseUri=undefined
+2025-09-22T13:51:45.3173571Z ##[debug]build.buildId=15608
+2025-09-22T13:51:45.3173918Z ##[debug]release.releaseId=undefined
+2025-09-22T13:51:45.3174266Z ##[debug]build.buildNumber=15608
+2025-09-22T13:51:45.3174624Z ##[debug]release.releaseName=undefined
+2025-09-22T13:51:45.3175002Z ##[debug]system.TeamFoundationCollectionUri=https://dev.azure.com/fractal-cdt-22-ccl-4839/
+2025-09-22T13:51:45.3175400Z ##[debug]system.teamProjectId=811036b9-edb0-44d9-9134-44d019065cd2
+2025-09-22T13:51:45.3175797Z ##[debug]build.sourceVersion=406a51a741afbc0ff80d3162d6c0d4bd53de6e6d
+2025-09-22T13:51:45.3176167Z ##[debug]build.repository.name=Fractal-Nexus
+2025-09-22T13:51:45.3176532Z ##[debug]build.repository.provider=TfsGit
+2025-09-22T13:51:45.3176895Z ##[debug]system.teamproject=Fractal-CDT-22-CCL-4839
+2025-09-22T13:51:45.3177275Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:51:45.3178091Z ##[debug][PUT]https://$fractal-cdtsols-dev-nexus-node:***@fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net/api/deployments/156081758549105316
+2025-09-22T13:51:47.5260302Z ##[debug]loaded affinity cookie ["ARRAffinity=6579d1445ebfd83358d5da5d87f00e5f0cecb1bc7c18f2e4277d913f46b43676;Path=/;HttpOnly;Secure;Domain=fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net","ARRAffinitySameSite=6579d1445ebfd83358d5da5d87f00e5f0cecb1bc7c18f2e4277d913f46b43676;Path=/;HttpOnly;SameSite=None;Secure;Domain=fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net"]
+2025-09-22T13:51:47.5262307Z ##[debug]updateDeployment. Data: {"statusCode":200,"statusMessage":"OK","headers":{"content-length":"1286","content-type":"application/json; charset=utf-8","date":"Mon, 22 Sep 2025 13:51:46 GMT","server":"Kestrel","set-cookie":["ARRAffinity=6579d1445ebfd83358d5da5d87f00e5f0cecb1bc7c18f2e4277d913f46b43676;Path=/;HttpOnly;Secure;Domain=fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net","ARRAffinitySameSite=6579d1445ebfd83358d5da5d87f00e5f0cecb1bc7c18f2e4277d913f46b43676;Path=/;HttpOnly;SameSite=None;Secure;Domain=fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net"]},"body":{"id":"156081758549105316","status":4,"status_text":null,"author_email":null,"author":"Bindumadhavi Killada","deployer":"VSTS","message":"{\"type\":\"Deployment\",\"commitId\":\"406a51a741afbc0ff80d3162d6c0d4bd53de6e6d\",\"buildId\":\"15608\",\"buildNumber\":\"15608\",\"repoProvider\":\"TfsGit\",\"repoName\":\"Fractal-Nexus\",\"collectionUrl\":\"https://dev.azure.com/fractal-cdt-22-ccl-4839/\",\"teamProject\":\"811036b9-edb0-44d9-9134-44d019065cd2\",\"buildProjectUrl\":\"https://dev.azure.com/fractal-cdt-22-ccl-4839/811036b9-edb0-44d9-9134-44d019065cd2\",\"repositoryUrl\":\"https://fractal-cdt-22-ccl-4839@dev.azure.com/fractal-cdt-22-ccl-4839/Fractal-CDT-22-CCL-4839/_git/Fractal-Nexus\",\"branch\":\"webapp\",\"teamProjectName\":\"Fractal-CDT-22-CCL-4839\",\"slotName\":\"production\"}","progress":null,"received_time":"0001-01-01T00:00:00","start_time":"2025-09-22T13:51:45.7838093Z","end_time":"2025-09-22T13:51:45.7838093Z","last_success_end_time":null,"complete":false,"active":true,"is_temp":false,"is_readonly":false,"url":"https://fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net/api/deployments/156081758549105316","log_url":"https://fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net/api/deployments/156081758549105316/log","site_name":null,"build_summary":null}}
+2025-09-22T13:51:47.5264340Z Successfully updated deployment History at https://fractal-cdtsols-dev-nexus-node.scm.azurewebsites.net/api/deployments/156081758549105316
+2025-09-22T13:51:47.5264765Z ##[debug]Active DeploymentId :156081758549105316
+2025-09-22T13:51:47.5266719Z ##[debug]MSAL - getMSALToken called. force=undefined
+2025-09-22T13:51:47.5267155Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Info - acquireTokenByClientCredential called
+2025-09-22T13:51:47.5267637Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - initializeRequestScopes called
+2025-09-22T13:51:47.5269720Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [afb80dcd-7b89-423d-9d2e-126621fa95ae] : @azure/msal-node@3.5.3 : Verbose - createAuthority called
+2025-09-22T13:51:47.5270420Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityResolveEndpointsAsync
+2025-09-22T13:51:47.5270958Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Retrieving all cache keys
+2025-09-22T13:51:47.5271485Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:47.5272137Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:51:47.5272684Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:47.5273214Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:51:47.5273766Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get cloud discovery metadata  from authority configuration
+2025-09-22T13:51:47.5274316Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Known Authorities: 
+2025-09-22T13:51:47.5274821Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Authority Metadata: N/A
+2025-09-22T13:51:47.5275366Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Canonical Authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/
+2025-09-22T13:51:47.5275990Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find cloud discovery metadata in the config... Attempting to get cloud discovery metadata from the hardcoded values.
+2025-09-22T13:51:47.5276585Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Found cloud discovery metadata from hardcoded values.
+2025-09-22T13:51:47.5277401Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateCloudDiscoveryMetadata
+2025-09-22T13:51:47.5277945Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Executing function authorityUpdateEndpointMetadata
+2025-09-22T13:51:47.5278509Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Attempting to get endpoint metadata from authority configuration
+2025-09-22T13:51:47.5279096Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Did not find endpoint metadata in the config... Attempting to get endpoint metadata from the hardcoded values.
+2025-09-22T13:51:47.5279671Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityUpdateEndpointMetadata
+2025-09-22T13:51:47.5280373Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: authority-metadata-***-login.windows.net
+2025-09-22T13:51:47.5280904Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:47.5281411Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Setting cache key value store
+2025-09-22T13:51:47.5281952Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Returning result from authorityResolveEndpointsAsync
+2025-09-22T13:51:47.5282501Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [afb80dcd-7b89-423d-9d2e-126621fa95ae] : @azure/msal-node@3.5.3 : Verbose - buildOauthClientConfiguration called
+2025-09-22T13:51:47.5283091Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Verbose - Replacing tenant domain name 2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0 with id {tenantid}
+2025-09-22T13:51:47.5283737Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [afb80dcd-7b89-423d-9d2e-126621fa95ae] : @azure/msal-node@3.5.3 : Info - Building oauth client configuration with the following authority: https://login.microsoftonline.com/2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0/oauth2/v2.0/token.
+2025-09-22T13:51:47.5284407Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [afb80dcd-7b89-423d-9d2e-126621fa95ae] : @azure/msal-node@3.5.3 : Verbose - Client credential client created
+2025-09-22T13:51:47.5285546Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting in-memory cache
+2025-09-22T13:51:47.5286156Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:47.5286984Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Item key: -login.windows.net-accesstoken-***-2d2199a8-cb98-4269-b2ae-c63cf2b7c7f0-https://management.azure.com//.default--
+2025-09-22T13:51:47.5287581Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-node@3.5.3 : Trace - Getting cache key-value store
+2025-09-22T13:51:47.5289681Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: config
+2025-09-22T13:51:47.5290249Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata called with source: hardcoded_values
+2025-09-22T13:51:47.5290763Z ##[debug][Mon, 22 Sep 2025 13:51:47 GMT] : [] : @azure/msal-common@15.6.0 : Trace - getAliasesFromMetadata: found cloud discovery metadata in hardcoded_values, returning aliases
+2025-09-22T13:51:47.5291210Z ##[debug]MSAL - retrieved token - isFromCache?: true
+2025-09-22T13:51:47.5291585Z ##[debug]CLIENT_RESETSTREAMONRETRY=undefined
+2025-09-22T13:51:47.5292092Z ##[debug][POST]https://management.azure.com/subscriptions/4f83679a-fcf1-4908-8c15-fd435488e766/resourceGroups/fractal-cdt-solutions-capability-building-project-dev-rg/providers/Microsoft.Web/sites/fractal-cdtsols-dev-nexus-node/publishxml?api-version=2016-08-01
+2025-09-22T13:51:47.9716588Z ##[debug]Could not parse response: {}
+2025-09-22T13:51:47.9717627Z ##[debug]Response: undefined
+2025-09-22T13:51:47.9718661Z ##[debug]Correlation ID from ARM api call response : f76c5b89-d7a6-4a26-9cad-4603b5cc74f4
+2025-09-22T13:51:47.9772936Z App Service Application URL: https://fractal-cdtsols-dev-nexus-node.azurewebsites.net
+2025-09-22T13:51:47.9773679Z ##[debug]set AppServiceApplicationUrl=https://fractal-cdtsols-dev-nexus-node.azurewebsites.net
+2025-09-22T13:51:47.9777381Z ##[debug]Processed: ##vso[task.setvariable variable=AppServiceApplicationUrl;isOutput=false;issecret=false;]https://fractal-cdtsols-dev-nexus-node.azurewebsites.net
+2025-09-22T13:51:47.9777934Z ##[debug]Deployment Succeded
+2025-09-22T13:51:47.9853198Z ##[section]Finishing: Azure App Service Deploy: fractal-cdtsols-dev-nexus-node
