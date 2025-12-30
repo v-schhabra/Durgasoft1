@@ -1,0 +1,67 @@
+2025-08-13T03:58:04.5521608Z ##[section]Starting: CdsPosting EastUS
+2025-08-13T03:58:04.5528750Z ==============================================================================
+2025-08-13T03:58:04.5528857Z Task         : Azure PowerShell
+2025-08-13T03:58:04.5528922Z Description  : Run a PowerShell script within an Azure environment
+2025-08-13T03:58:04.5528999Z Version      : 5.260.0
+2025-08-13T03:58:04.5529058Z Author       : Microsoft Corporation
+2025-08-13T03:58:04.5529116Z Help         : https://aka.ms/azurepowershelltroubleshooting
+2025-08-13T03:58:04.5529191Z ==============================================================================
+2025-08-13T03:58:05.6951678Z AZUREPS_HOST_ENVIRONMENT: ADO/AzurePowerShell@v5_Windows_NT_Azure-Pipelines-1ESPT-ExDShared 8_LaborManagement-Release-Jobs-CdsPosting_14381081__
+2025-08-13T03:58:05.7669682Z Generating script.
+2025-08-13T03:58:05.7972893Z ========================== Starting Command Output ===========================
+2025-08-13T03:58:05.8179138Z ##[command]"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command ". 'D:\a\_work\_temp\3593f601-fda4-4230-b13a-e07ea03f8b61.ps1'"
+2025-08-13T03:58:06.6544045Z Added TLS 1.2 in session.
+2025-08-13T03:58:06.8039506Z ##[command]Import-Module -Name C:\Modules\az_12.5.0\Az.Accounts\5.1.1\Az.Accounts.psd1 -Global
+2025-08-13T03:58:07.8943897Z ##[command]Update-AzConfig -CheckForUpgrade False -AppliesTo Az -Scope Process
+2025-08-13T03:58:08.0320409Z 
+2025-08-13T03:58:08.1303252Z ##[command]Get-AzConfig -AppliesTo Az
+2025-08-13T03:58:08.1554970Z ##[command]Update-AzConfig -DisplayBreakingChangeWarning False -AppliesTo Az -Scope Process
+2025-08-13T03:58:08.1719647Z ##[command]Enable-AzureRmAlias -Scope Process
+2025-08-13T03:58:10.6241582Z ##[command]Clear-AzContext -Scope CurrentUser -Force -ErrorAction SilentlyContinue
+2025-08-13T03:58:10.8088696Z ##[command]Clear-AzContext -Scope Process
+2025-08-13T03:58:10.8431810Z ##[command]Connect-AzAccount 
+2025-08-13T03:58:10.8432310Z Name                           Value                                                                                   
+2025-08-13T03:58:10.8432740Z ----                           -----                                                                                   
+2025-08-13T03:58:10.8433033Z Tenant                         72f988bf-86f1-41af-91ab-2d7cd011db47                                                    
+2025-08-13T03:58:10.8433323Z Scope                          Process                                                                                 
+2025-08-13T03:58:10.8434001Z Environment                    AzureCloud                                                                              
+2025-08-13T03:58:10.8434752Z ApplicationId                  ***                                                    
+2025-08-13T03:58:10.8437735Z ServicePrincipal               True                                                                                    
+2025-08-13T03:58:10.8438251Z 
+2025-08-13T03:58:10.8438415Z 
+2025-08-13T03:58:10.8438621Z 
+2025-08-13T03:58:11.3134383Z Key                          Value Applies To Scope   Help Message                                                     
+2025-08-13T03:58:11.3136827Z ---                          ----- ---------- -----   ------------                                                     
+2025-08-13T03:58:11.3145358Z CheckForUpgrade              False Az         Process When enabled, Azure PowerShell will check for updates automati...
+2025-08-13T03:58:11.3153929Z DisplayBreakingChangeWarning False Az         Process Controls if warning messages for breaking changes are displaye...
+2025-08-13T03:58:11.3154512Z 
+2025-08-13T03:58:11.3156117Z Environments : {[AzureChinaCloud, AzureChinaCloud], [AzureCloud, AzureCloud], [AzureUSGovernment, AzureUSGovernment]}
+2025-08-13T03:58:11.3157204Z Context      : Microsoft.Azure.Commands.Profile.Models.Core.PSAzureContext
+2025-08-13T03:58:11.3157597Z 
+2025-08-13T03:58:11.3451047Z VERBOSE: Command [Connect-AzAccount] succeeded.
+2025-08-13T03:58:11.3504130Z ##[command]Set-AzContext 
+2025-08-13T03:58:11.3504427Z Name                           Value                                                                                   
+2025-08-13T03:58:11.3505017Z ----                           -----                                                                                   
+2025-08-13T03:58:11.3505577Z SubscriptionId                 13af6273-c989-44f8-a3d7-8398f343d093                                                    
+2025-08-13T03:58:11.3505991Z 
+2025-08-13T03:58:11.3506282Z 
+2025-08-13T03:58:11.3506592Z 
+2025-08-13T03:58:11.4764744Z 
+2025-08-13T03:58:11.4768453Z Name               : MSFT-Time Management-02-NonProd (13af6273-c989-44f8-a3d7-8398f343d093) - 
+2025-08-13T03:58:11.4769197Z                      72f988bf-86f1-41af-91ab-2d7cd011db47 - ***
+2025-08-13T03:58:11.4769930Z Subscription       : 13af6273-c989-44f8-a3d7-8398f343d093
+2025-08-13T03:58:11.4770738Z Account            : ***
+2025-08-13T03:58:11.4771048Z Environment        : AzureCloud
+2025-08-13T03:58:11.4771729Z Tenant             : 72f988bf-86f1-41af-91ab-2d7cd011db47
+2025-08-13T03:58:11.4772051Z TokenCache         : 
+2025-08-13T03:58:11.4772510Z VersionProfile     : 
+2025-08-13T03:58:11.4773019Z ExtendedProperties : {}
+2025-08-13T03:58:11.4773353Z 
+2025-08-13T03:58:11.5585398Z VERBOSE: Command [Set-AzContext] succeeded.
+2025-08-13T03:58:12.0550521Z ##[error]The term 'Publish-AzWebJob' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+2025-08-13T03:58:12.1541051Z ##[error]PowerShell exited with code '1'.
+2025-08-13T03:58:12.3183853Z Added TLS 1.2 in session.
+2025-08-13T03:58:13.5113679Z ##[command]Disconnect-AzAccount -Scope CurrentUser -ErrorAction Stop
+2025-08-13T03:58:13.7383109Z ##[command]Disconnect-AzAccount -Scope Process -ErrorAction Stop
+2025-08-13T03:58:13.7653485Z ##[command]Clear-AzContext -Scope Process -ErrorAction Stop
+2025-08-13T03:58:13.9815894Z ##[section]Finishing: CdsPosting EastUS
